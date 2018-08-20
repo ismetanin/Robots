@@ -7,19 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BB36C772129FE5000DBE8CE /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36C762129FE5000DBE8CE /* fastlane */; };
-		8BB36C7A2129FE5000DBE8CE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36C792129FE5000DBE8CE /* .gitignore */; };
+		8029497E1DC241C4916C4AE7 /* Pods_Robots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21700317240E498071D24B3E /* Pods_Robots.framework */; };
 		8BB36C9C2129FE5000DBE8CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */; };
 		8BB36C9E2129FE5000DBE8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */; };
 		8BB36CA02129FE5000DBE8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */; };
-		8BB36CA22129FE5000DBE8CE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CA12129FE5000DBE8CE /* Makefile */; };
-		8BB36CA42129FE5000DBE8CE /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36CA32129FE5000DBE8CE /* Gemfile */; };
-		8BB36CA62129FE5000DBE8CE /* commit-msg in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36CA52129FE5000DBE8CE /* commit-msg */; };
-		8BB36CA82129FE5000DBE8CE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36CA72129FE5000DBE8CE /* .swiftlint.yml */; };
 		8BB36CAC2129FE5000DBE8CE /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */; };
 		8BB36CAE2129FE5000DBE8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36CAD2129FE5000DBE8CE /* Main.storyboard */; };
 		8BB36CB92129FE5000DBE8CE /* RobotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */; };
 		8BB36CC72129FE5000DBE8CE /* RobotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CC62129FE5000DBE8CE /* RobotsUITests.swift */; };
+		D206D7EDB560F4A24F1BF6FC /* Pods_Robots_RobotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,44 +36,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21700317240E498071D24B3E /* Pods_Robots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76074943D7D8534AA8AD53B5 /* Pods-Robots-RobotsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E29BA80DF5EC5129AEC5522 /* Pods-Robots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.debug.xcconfig"; sourceTree = "<group>"; };
+		83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BB36C722129FE5000DBE8CE /* Robots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robots.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BB36C762129FE5000DBE8CE /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../fastlane; sourceTree = "<group>"; };
-		8BB36C782129FE5000DBE8CE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
-		8BB36C792129FE5000DBE8CE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		8BB36C7C2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Third Party/.gitkeep"; sourceTree = "<group>"; };
-		8BB36C7E2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Services/.gitkeep; sourceTree = "<group>"; };
-		8BB36C802129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Screens/.gitkeep; sourceTree = "<group>"; };
-		8BB36C832129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/Strings/.gitkeep; sourceTree = "<group>"; };
-		8BB36C852129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/Images/.gitkeep; sourceTree = "<group>"; };
-		8BB36C872129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/Constants/.gitkeep; sourceTree = "<group>"; };
-		8BB36C892129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/Fonts/.gitkeep; sourceTree = "<group>"; };
-		8BB36C8C2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Models/Entity/.gitkeep; sourceTree = "<group>"; };
-		8BB36C8E2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Models/Entry/.gitkeep; sourceTree = "<group>"; };
-		8BB36C912129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Library/Base Classes/.gitkeep"; sourceTree = "<group>"; };
-		8BB36C932129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Library/Utils/.gitkeep; sourceTree = "<group>"; };
-		8BB36C952129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Library/Extensions/.gitkeep; sourceTree = "<group>"; };
-		8BB36C972129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Library/Reusable Layer/.gitkeep"; sourceTree = "<group>"; };
-		8BB36C992129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Library/Protocols/.gitkeep; sourceTree = "<group>"; };
-		8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Application/LaunchScreen.xib; sourceTree = "<group>"; };
-		8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Images/Assets.xcassets; sourceTree = "<group>"; };
-		8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
-		8BB36CA12129FE5000DBE8CE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Makefile; path = ../Makefile; sourceTree = "<group>"; };
-		8BB36CA32129FE5000DBE8CE /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
-		8BB36CA52129FE5000DBE8CE /* commit-msg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "commit-msg"; path = "../commit-msg"; sourceTree = "<group>"; };
-		8BB36CA72129FE5000DBE8CE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
-		8BB36CA92129FE5000DBE8CE /* Rambafile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rambafile; path = ../Rambafile; sourceTree = "<group>"; };
-		8BB36CAA2129FE5000DBE8CE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModuleTransitionable.swift; path = Library/Protocols/ModuleTransitionable.swift; sourceTree = "<group>"; };
+		8BB36C7C2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C7E2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C802129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C832129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C852129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C872129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C892129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C8C2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C8E2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C912129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C932129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C952129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C972129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C992129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		8BB36CAD2129FE5000DBE8CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BB36CAF2129FE5000DBE8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB36CB42129FE5000DBE8CE /* RobotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsTests.swift; sourceTree = "<group>"; };
-		8BB36CBB2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Tests/.gitkeep; sourceTree = "<group>"; };
-		8BB36CBC2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/.gitkeep; sourceTree = "<group>"; };
+		8BB36CBB2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BB36CBC2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36CBD2129FE5000DBE8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB36CC22129FE5000DBE8CE /* RobotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB36CC62129FE5000DBE8CE /* RobotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsUITests.swift; sourceTree = "<group>"; };
 		8BB36CC82129FE5000DBE8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots_RobotsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FCBAF4F186B3962D4AEE2B /* Pods-Robots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8029497E1DC241C4916C4AE7 /* Pods_Robots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D206D7EDB560F4A24F1BF6FC /* Pods_Robots_RobotsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F1AE50C7EDF4B33D4C27897 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E29BA80DF5EC5129AEC5522 /* Pods-Robots.debug.xcconfig */,
+				93FCBAF4F186B3962D4AEE2B /* Pods-Robots.release.xcconfig */,
+				76074943D7D8534AA8AD53B5 /* Pods-Robots-RobotsTests.debug.xcconfig */,
+				83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BB36C682129FE5000DBE8CE = {
 			isa = PBXGroup;
 			children = (
 				8BB36C742129FE5000DBE8CE /* Robots */,
 				8BB36CB72129FE5000DBE8CE /* RobotsTests */,
 				8BB36CC52129FE5000DBE8CE /* RobotsUITests */,
+				DDFA02E81B5FB3DBD20D3B3B /* Frameworks */,
+				6F1AE50C7EDF4B33D4C27897 /* Pods */,
 				8BB36C732129FE5000DBE8CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,34 +136,17 @@
 		8BB36C742129FE5000DBE8CE /* Robots */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36CAD2129FE5000DBE8CE /* Main.storyboard */,
-				8BB36CAF2129FE5000DBE8CE /* Info.plist */,
-				8BB36C752129FE5000DBE8CE /* Non-iOS Resources */,
-				8BB36C7B2129FE5000DBE8CE /* Third Party */,
-				8BB36C7D2129FE5000DBE8CE /* Services */,
-				8BB36C7F2129FE5000DBE8CE /* Screens */,
-				8BB36C812129FE5000DBE8CE /* Resources */,
-				8BB36C8A2129FE5000DBE8CE /* Models */,
-				8BB36C8F2129FE5000DBE8CE /* Library */,
 				8BB36C9A2129FE5000DBE8CE /* Application */,
+				8BB36C8F2129FE5000DBE8CE /* Library */,
+				8BB36C8A2129FE5000DBE8CE /* Models */,
+				8BB36C812129FE5000DBE8CE /* Resources */,
+				8BB36C7F2129FE5000DBE8CE /* Screens */,
+				8BB36C7D2129FE5000DBE8CE /* Services */,
+				8BB36C7B2129FE5000DBE8CE /* Third Party */,
+				8BB36CAF2129FE5000DBE8CE /* Info.plist */,
+				8BB36CAD2129FE5000DBE8CE /* Main.storyboard */,
 			);
 			path = Robots;
-			sourceTree = "<group>";
-		};
-		8BB36C752129FE5000DBE8CE /* Non-iOS Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8BB36C762129FE5000DBE8CE /* fastlane */,
-				8BB36C782129FE5000DBE8CE /* Podfile */,
-				8BB36C792129FE5000DBE8CE /* .gitignore */,
-				8BB36CA12129FE5000DBE8CE /* Makefile */,
-				8BB36CA32129FE5000DBE8CE /* Gemfile */,
-				8BB36CA52129FE5000DBE8CE /* commit-msg */,
-				8BB36CA72129FE5000DBE8CE /* .swiftlint.yml */,
-				8BB36CA92129FE5000DBE8CE /* Rambafile */,
-				8BB36CAA2129FE5000DBE8CE /* README.md */,
-			);
-			name = "Non-iOS Resources";
 			sourceTree = "<group>";
 		};
 		8BB36C7B2129FE5000DBE8CE /* Third Party */ = {
@@ -163,7 +154,7 @@
 			children = (
 				8BB36C7C2129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = "Third Party";
+			path = "Third Party";
 			sourceTree = "<group>";
 		};
 		8BB36C7D2129FE5000DBE8CE /* Services */ = {
@@ -171,7 +162,7 @@
 			children = (
 				8BB36C7E2129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8BB36C7F2129FE5000DBE8CE /* Screens */ = {
@@ -179,18 +170,18 @@
 			children = (
 				8BB36C802129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Screens;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		8BB36C812129FE5000DBE8CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36C822129FE5000DBE8CE /* Strings */,
-				8BB36C842129FE5000DBE8CE /* Images */,
 				8BB36C862129FE5000DBE8CE /* Constants */,
 				8BB36C882129FE5000DBE8CE /* Fonts */,
+				8BB36C842129FE5000DBE8CE /* Images */,
+				8BB36C822129FE5000DBE8CE /* Strings */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8BB36C822129FE5000DBE8CE /* Strings */ = {
@@ -198,7 +189,7 @@
 			children = (
 				8BB36C832129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Strings;
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		8BB36C842129FE5000DBE8CE /* Images */ = {
@@ -207,7 +198,7 @@
 				8BB36C852129FE5000DBE8CE /* .gitkeep */,
 				8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		8BB36C862129FE5000DBE8CE /* Constants */ = {
@@ -215,7 +206,7 @@
 			children = (
 				8BB36C872129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Constants;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		8BB36C882129FE5000DBE8CE /* Fonts */ = {
@@ -223,7 +214,7 @@
 			children = (
 				8BB36C892129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		8BB36C8A2129FE5000DBE8CE /* Models */ = {
@@ -232,7 +223,7 @@
 				8BB36C8B2129FE5000DBE8CE /* Entity */,
 				8BB36C8D2129FE5000DBE8CE /* Entry */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8BB36C8B2129FE5000DBE8CE /* Entity */ = {
@@ -240,7 +231,7 @@
 			children = (
 				8BB36C8C2129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		8BB36C8D2129FE5000DBE8CE /* Entry */ = {
@@ -248,19 +239,19 @@
 			children = (
 				8BB36C8E2129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Entry;
+			path = Entry;
 			sourceTree = "<group>";
 		};
 		8BB36C8F2129FE5000DBE8CE /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				8BB36C902129FE5000DBE8CE /* Base Classes */,
-				8BB36C922129FE5000DBE8CE /* Utils */,
 				8BB36C942129FE5000DBE8CE /* Extensions */,
-				8BB36C962129FE5000DBE8CE /* Reusable Layer */,
 				8BB36C982129FE5000DBE8CE /* Protocols */,
+				8BB36C962129FE5000DBE8CE /* Reusable Layer */,
+				8BB36C922129FE5000DBE8CE /* Utils */,
 			);
-			name = Library;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		8BB36C902129FE5000DBE8CE /* Base Classes */ = {
@@ -268,7 +259,7 @@
 			children = (
 				8BB36C912129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = "Base Classes";
+			path = "Base Classes";
 			sourceTree = "<group>";
 		};
 		8BB36C922129FE5000DBE8CE /* Utils */ = {
@@ -276,7 +267,7 @@
 			children = (
 				8BB36C932129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8BB36C942129FE5000DBE8CE /* Extensions */ = {
@@ -284,7 +275,7 @@
 			children = (
 				8BB36C952129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8BB36C962129FE5000DBE8CE /* Reusable Layer */ = {
@@ -292,7 +283,7 @@
 			children = (
 				8BB36C972129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = "Reusable Layer";
+			path = "Reusable Layer";
 			sourceTree = "<group>";
 		};
 		8BB36C982129FE5000DBE8CE /* Protocols */ = {
@@ -301,25 +292,25 @@
 				8BB36C992129FE5000DBE8CE /* .gitkeep */,
 				8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */,
 			);
-			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8BB36C9A2129FE5000DBE8CE /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */,
 				8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */,
+				8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */,
 			);
-			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		8BB36CB72129FE5000DBE8CE /* RobotsTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */,
+				8BB36CBA2129FE5000DBE8CE /* Tests */,
 				8BB36CBC2129FE5000DBE8CE /* .gitkeep */,
 				8BB36CBD2129FE5000DBE8CE /* Info.plist */,
-				8BB36CBA2129FE5000DBE8CE /* Tests */,
+				8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */,
 			);
 			path = RobotsTests;
 			sourceTree = "<group>";
@@ -329,16 +320,25 @@
 			children = (
 				8BB36CBB2129FE5000DBE8CE /* .gitkeep */,
 			);
-			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		8BB36CC52129FE5000DBE8CE /* RobotsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36CC62129FE5000DBE8CE /* RobotsUITests.swift */,
 				8BB36CC82129FE5000DBE8CE /* Info.plist */,
+				8BB36CC62129FE5000DBE8CE /* RobotsUITests.swift */,
 			);
 			path = RobotsUITests;
+			sourceTree = "<group>";
+		};
+		DDFA02E81B5FB3DBD20D3B3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21700317240E498071D24B3E /* Pods_Robots.framework */,
+				91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,10 +348,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BB36CCB2129FE5000DBE8CE /* Build configuration list for PBXNativeTarget "Robots" */;
 			buildPhases = (
+				56DD408A5D926639092F13A1 /* [CP] Check Pods Manifest.lock */,
 				8BB36C6D2129FE5000DBE8CE /* Sources */,
 				8BB36C6E2129FE5000DBE8CE /* Frameworks */,
 				8BB36C6F2129FE5000DBE8CE /* Resources */,
 				8BB36C702129FE5000DBE8CE /* Swift Lint */,
+				C373077286204272BBB8442A /* [CP] Embed Pods Frameworks */,
+				764263BC06115BDD575B0F9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,9 +369,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BB36CCE2129FE5000DBE8CE /* Build configuration list for PBXNativeTarget "RobotsTests" */;
 			buildPhases = (
+				9309D7437ABC5230A3A69CE1 /* [CP] Check Pods Manifest.lock */,
 				8BB36CB02129FE5000DBE8CE /* Sources */,
 				8BB36CB12129FE5000DBE8CE /* Frameworks */,
 				8BB36CB22129FE5000DBE8CE /* Resources */,
+				0FBE84DFCCACFB1BB1BBE187 /* [CP] Embed Pods Frameworks */,
+				B45D72B7A8A748685C445C16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -445,14 +451,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB36C7A2129FE5000DBE8CE /* .gitignore in Resources */,
 				8BB36C9C2129FE5000DBE8CE /* LaunchScreen.xib in Resources */,
-				8BB36CA42129FE5000DBE8CE /* Gemfile in Resources */,
 				8BB36CAE2129FE5000DBE8CE /* Main.storyboard in Resources */,
-				8BB36CA82129FE5000DBE8CE /* .swiftlint.yml in Resources */,
 				8BB36C9E2129FE5000DBE8CE /* Assets.xcassets in Resources */,
-				8BB36C772129FE5000DBE8CE /* fastlane in Resources */,
-				8BB36CA62129FE5000DBE8CE /* commit-msg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +474,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0FBE84DFCCACFB1BB1BBE187 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56DD408A5D926639092F13A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Robots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764263BC06115BDD575B0F9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8BB36C702129FE5000DBE8CE /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,7 +534,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $PODS_ROOT/SwiftGen/bin/swiftgen;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		9309D7437ABC5230A3A69CE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Robots-RobotsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45D72B7A8A748685C445C16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C373077286204272BBB8442A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -494,7 +591,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB36CA22129FE5000DBE8CE /* Makefile in Sources */,
 				8BB36CA02129FE5000DBE8CE /* AppDelegate.swift in Sources */,
 				8BB36CAC2129FE5000DBE8CE /* ModuleTransitionable.swift in Sources */,
 			);
@@ -650,6 +746,7 @@
 		};
 		8BB36CCC2129FE5000DBE8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E29BA80DF5EC5129AEC5522 /* Pods-Robots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -668,6 +765,7 @@
 		};
 		8BB36CCD2129FE5000DBE8CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FCBAF4F186B3962D4AEE2B /* Pods-Robots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,6 +784,7 @@
 		};
 		8BB36CCF2129FE5000DBE8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76074943D7D8534AA8AD53B5 /* Pods-Robots-RobotsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,6 +806,7 @@
 		};
 		8BB36CD02129FE5000DBE8CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
