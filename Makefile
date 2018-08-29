@@ -17,9 +17,6 @@ init:
 screen: 
 	bundle exec generamba gen $(modName) surf_mvp_module
 
-build:
-	bundle exec fastlane build clean:true
-
 synx:
 	bundle exec synx --exclusion "Robots/Non-iOS Resources" Robots.xcodeproj
 

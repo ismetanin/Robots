@@ -12,11 +12,7 @@ target 'Robots' do
     use_frameworks!
 
     utils
-                
-
-            pod 'Crashlytics'
-            pod 'Fabric'
-
+    pod 'PinLayout', '~> 1.7.0'
 
     target 'RobotsTests' do
         # Put pods used for both test targets here
