@@ -1,0 +1,7 @@
+input_dir: Robots/Resources
+output_dir: Robots/Resources/Constants
+strings:
+  paths: Strings/en.lproj/Localizable.strings
+  templateName: structured-swift3
+  output: Localizable.swift
+
