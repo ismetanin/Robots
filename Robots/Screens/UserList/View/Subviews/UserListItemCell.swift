@@ -48,7 +48,7 @@ final class UserListItemCell: UITableViewCell {
 
     func configure(with user: User) {
         self.userNameLabel.text = user.firstname + " " + user.lastname
-        self.userImageView.image = UIImage() // TODO: load user.photoURL
+        self.userImageView.loadImage(with: user.photoURL, placeholder: #imageLiteral(resourceName: "imgAvatarPlaceholder"))
     }
 
     // MARK: - Private methods
@@ -62,18 +62,18 @@ final class UserListItemCell: UITableViewCell {
         contentView.addSubview(userNameLabel)
 
         userImageView.layer.cornerRadius = Constants.imageViewSize.width / 2
+        userImageView.image = #imageLiteral(resourceName: "imgAvatarPlaceholder")
         contentView.addSubview(userImageView)
     }
 
     private func layout() {
         userImageView.pin
-            .top(contentView.pin.safeArea)
             .start(contentView.pin.safeArea)
+            .top(contentView.pin.safeArea)
             .bottom(contentView.pin.safeArea)
-            .margin(Constants.defaultMargin)
             .height(Constants.imageViewSize.height)
             .width(Constants.imageViewSize.width)
-            .sizeToFit()
+            .margin(Constants.defaultMargin)
 
         userNameLabel.pin
             .vCenter()

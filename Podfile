@@ -12,6 +12,7 @@ target 'Robots' do
     use_frameworks!
 
     utils
+    pod 'Nuke', '~> 7.3.2'
     pod 'PinLayout', '~> 1.7.0'
 
     target 'RobotsTests' do
