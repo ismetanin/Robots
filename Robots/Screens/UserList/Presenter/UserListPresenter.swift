@@ -19,7 +19,17 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
     func loadData() {
         view?.configure(with: UserListViewState.data(
             users: [
-                User(id: 0, firstname: "John", lastname: "Smith", photoURL: "", about: "About", phone: "+79537003117", email: "jsmth@gmail.com", company: "", address: "")
+                User(
+                    id: 0,
+                    firstname: "John",
+                    lastname: "Smith",
+                    photoURL: "https://www.photos-de-chat.fr/wp-content/uploads/2015/01/imag-de-chat.jpg",
+                    about: "About",
+                    phone: "+79537003117",
+                    email: "jsmth@gmail.com",
+                    company: "",
+                    address: ""
+                )
             ])
         )
     }

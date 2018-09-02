@@ -19,9 +19,9 @@ extension UIImageView {
 
     // MARK: - Internal methods
 
-    func loadImage(with urlString: String, placeholder: UIImage?) {
+    func loadImage(with urlString: String, placeholder: UIImage? = nil) {
         guard let url = URL(string: urlString) else {
-            showPlacehoderIfPossible(placeholder: placeholder)
+            self.display(image: placeholder)
             return
         }
         self.loadImage(with: url, placeholder: placeholder)
@@ -40,6 +40,7 @@ extension UIImageView {
 
     // MARK: - Private methods
 
+    // TODO: We don't use this method. Test placholder showing and delete or call this method.
     private func showPlacehoderIfPossible(placeholder: UIImage?) {
         guard let placeholder = placeholder else {
             return

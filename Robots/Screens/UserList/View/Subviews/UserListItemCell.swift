@@ -24,6 +24,7 @@ final class UserListItemCell: UITableViewCell {
         static let defaultMargin: CGFloat = 8
         static let imageViewSize: CGSize = CGSize(width: 42, height: 42)
         static let userNameLabelFontSize: CGFloat = 16
+        static let imageViewPlaceholder: UIImage = #imageLiteral(resourceName: "imgAvatarPlaceholder")
     }
 
     // MARK: - Initialization and deinitialization
@@ -48,7 +49,7 @@ final class UserListItemCell: UITableViewCell {
 
     func configure(with user: User) {
         self.userNameLabel.text = user.firstname + " " + user.lastname
-        self.userImageView.loadImage(with: user.photoURL, placeholder: #imageLiteral(resourceName: "imgAvatarPlaceholder"))
+        self.userImageView.loadImage(with: user.photoURL, placeholder: Constants.imageViewPlaceholder)
     }
 
     // MARK: - Private methods
@@ -61,8 +62,8 @@ final class UserListItemCell: UITableViewCell {
         userNameLabel.textColor = .black
         contentView.addSubview(userNameLabel)
 
-        userImageView.layer.cornerRadius = Constants.imageViewSize.width / 2
-        userImageView.image = #imageLiteral(resourceName: "imgAvatarPlaceholder")
+        userImageView.image = Constants.imageViewPlaceholder
+        userImageView.clipsToBounds = true
         contentView.addSubview(userImageView)
     }
 
@@ -74,6 +75,8 @@ final class UserListItemCell: UITableViewCell {
             .height(Constants.imageViewSize.height)
             .width(Constants.imageViewSize.width)
             .margin(Constants.defaultMargin)
+
+        userImageView.layer.cornerRadius = Constants.imageViewSize.width / 2
 
         userNameLabel.pin
             .vCenter()
