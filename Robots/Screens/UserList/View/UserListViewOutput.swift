@@ -8,4 +8,5 @@
 
 protocol UserListViewOutput {
     func loadData()
+    func select(user: User)
 }

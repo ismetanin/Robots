@@ -17,6 +17,7 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
     // MARK: - UserListViewOutput
 
     func loadData() {
+        view?.configure(with: .loading)
         view?.configure(with: UserListViewState.data(
             users: [
                 User(
@@ -32,6 +33,10 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
                 )
             ])
         )
+    }
+
+    func select(user: User) {
+
     }
 
 }

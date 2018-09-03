@@ -40,14 +40,44 @@ final class UserListViewTests: XCTestCase {
         XCTAssert(self.output?.loadDataWasCalled == true)
     }
 
+    func testThatViewAsksForSelectUser() {
+        // given
+        let user = User(id: 0, firstname: "", lastname: "",
+                        photoURL: "", about: "", phone: "",
+                        email: "", company: "", address: "")
+        self.view?.adapter = UserListViewAdapterMock()
+        // when
+        self.view?.viewDidLoad()
+        self.view?.adapter?.didSelectUser?(user)
+        // then
+        XCTAssert(self.output?.selectUserWasCalled == true)
+    }
+
     // MARK: - Mocks
 
-    final class UserListViewOutputMock: UserListViewOutput {
+    private final class UserListViewOutputMock: UserListViewOutput {
 
         var loadDataWasCalled = false
+        var selectUserWasCalled = false
 
         func loadData() {
             loadDataWasCalled = true
+        }
+
+        func select(user: User) {
+            selectUserWasCalled = true
+        }
+
+    }
+
+    private final class UserListViewAdapterMock: UserListViewAdapter {
+
+        var didSelectUser: ((User) -> Void)?
+
+        func configure(with items: [User]) {
+        }
+
+        func set(view: CollectionDisplayable) {
         }
 
     }

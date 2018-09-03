@@ -37,6 +37,9 @@
 		8BB51608213AD95A00807DB8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BB51607213AD95A00807DB8 /* swiftgen.yml */; };
 		8BB5160A213AD9BE00807DB8 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB51609213AD9BE00807DB8 /* Localizable.swift */; };
 		8BB5160C213BFF1D00807DB8 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5160B213BFF1D00807DB8 /* UIImageView.swift */; };
+		8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */; };
+		8BF44B9C213DB40800CFF88B /* CollectionDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */; };
+		8BF44B9E213DB42800CFF88B /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */; };
 		A7BA4A2118F3895E1E951090 /* UserListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDE770E23C905D4E2B07A5 /* UserListRouterInput.swift */; };
 		D206D7EDB560F4A24F1BF6FC /* Pods_Robots_RobotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */; };
 		D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8360594B3E57625BEB9F9 /* UserListViewTests.swift */; };
@@ -84,7 +87,6 @@
 		8BB36C912129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C932129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C972129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8BB36C992129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,9 @@
 		8BB51607213AD95A00807DB8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		8BB51609213AD9BE00807DB8 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		8BB5160B213BFF1D00807DB8 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewAdapter.swift; sourceTree = "<group>"; };
+		8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayable.swift; sourceTree = "<group>"; };
+		8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
 		91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots_RobotsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FCBAF4F186B3962D4AEE2B /* Pods-Robots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.release.xcconfig"; sourceTree = "<group>"; };
 		A70F8231AA2734B47650B920 /* UserListModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListModuleConfiguratorTests.swift; sourceTree = "<group>"; };
@@ -224,6 +229,7 @@
 		8BA1B7B2213AB925007B643D /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */,
 				8BA1B7B0213AB921007B643D /* UserListTableViewAdapter.swift */,
 			);
 			path = Adapter;
@@ -413,7 +419,8 @@
 		8BB36C982129FE5000DBE8CE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36C992129FE5000DBE8CE /* .gitkeep */,
+				8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */,
+				8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */,
 				8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */,
 			);
 			path = Protocols;
@@ -749,12 +756,15 @@
 				E96D4CDC3355DD2BA401B6DB /* UserListPresenter.swift in Sources */,
 				8BA1B7B4213ABA07007B643D /* UserListItemCell.swift in Sources */,
 				8BA1B7B7213ABA92007B643D /* User.swift in Sources */,
+				8BF44B9C213DB40800CFF88B /* CollectionDisplayable.swift in Sources */,
 				8BB5160C213BFF1D00807DB8 /* UIImageView.swift in Sources */,
 				6F60BB66238293599FD80F9E /* UserListModuleInput.swift in Sources */,
 				45E6F3FA33ADEC84C1240FDD /* UserListModuleOutput.swift in Sources */,
 				2B5DABCA5C86A7124F714B3B /* UserListViewController.swift in Sources */,
 				8BA1B7B1213AB921007B643D /* UserListTableViewAdapter.swift in Sources */,
+				8BF44B9E213DB42800CFF88B /* CollectionAdapter.swift in Sources */,
 				782CA547F35A165DA895D9E4 /* UserListViewInput.swift in Sources */,
+				8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */,
 				8BB5160A213AD9BE00807DB8 /* Localizable.swift in Sources */,
 				1B7E4F24C54E87BA9FFB84BD /* UserListViewOutput.swift in Sources */,
 			);

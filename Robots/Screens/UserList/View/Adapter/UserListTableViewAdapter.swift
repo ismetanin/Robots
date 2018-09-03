@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class UserListTableViewAdapter: NSObject {
+final class UserListTableViewAdapter: NSObject, UserListViewAdapter {
 
     // MARK: - Constants
 
@@ -23,9 +23,12 @@ final class UserListTableViewAdapter: NSObject {
 
     var didSelectUser: ((User) -> Void)?
 
-    // MARK: - Internal helpers
+    // MARK: - Internal methods
 
-    func set(tableView: UITableView) {
+    func set(view: CollectionDisplayable) {
+        guard let tableView = view as? UITableView else {
+            return
+        }
         self.tableView = tableView
         tableView.delegate = self
         tableView.dataSource = self

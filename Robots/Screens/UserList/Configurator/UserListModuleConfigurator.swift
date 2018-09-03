@@ -20,8 +20,11 @@ final class UserListModuleConfigurator {
         presenter.view = view
         presenter.router = router
         presenter.output = output
+
         router.view = view
+
         view.output = presenter
+        view.adapter = UserListTableViewAdapter()
 
         return view
     }

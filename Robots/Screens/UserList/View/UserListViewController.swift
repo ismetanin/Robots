@@ -19,14 +19,17 @@ final class UserListViewController: UIViewController, UserListViewInput, ModuleT
     // MARK: - Properties
 
     var output: UserListViewOutput?
-    private lazy var adapter = UserListTableViewAdapter()
+    var adapter: UserListViewAdapter?
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.loadData()
-        adapter.set(tableView: tableView)
+        adapter?.set(view: tableView)
+        adapter?.didSelectUser = { [weak self] user in
+            self?.output?.select(user: user)
+        }
         configureSubviews()
     }
 
@@ -46,10 +49,12 @@ final class UserListViewController: UIViewController, UserListViewInput, ModuleT
     func configure(with state: UserListViewState) {
         switch state {
         case .data(let users):
-            adapter.configure(with: users)
+            activityIndicator.stopAnimating()
+            adapter?.configure(with: users)
         case .loading:
-            break
-        case .error(let error):
+            activityIndicator.startAnimating()
+        case .error:
+            activityIndicator.stopAnimating()
             break
         }
     }
