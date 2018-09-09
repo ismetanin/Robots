@@ -49,7 +49,7 @@ final class UserListItemCell: UITableViewCell {
 
     func configure(with user: User) {
         self.userNameLabel.text = user.firstname + " " + user.lastname
-        self.userImageView.loadImage(with: user.photoURL, placeholder: Constants.imageViewPlaceholder)
+        self.userImageView.loadImage(with: user.photoStringURL, placeholder: Constants.imageViewPlaceholder)
     }
 
     // MARK: - Private methods

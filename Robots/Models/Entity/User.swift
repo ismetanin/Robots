@@ -8,14 +8,27 @@
 
 import Foundation
 
-struct User {
+struct User: Codable {
     let id: Int
     let firstname: String
     let lastname: String
-    let photoURL: String
+    let photoStringURL: String
     let about: String
     let phone: String
     let email: String
     let company: String
     let address: String
+
+    private enum CodingKeys: String, CodingKey {
+        case firstname = "first_name"
+        case lastname = "last_name"
+        case photoStringURL = "photo"
+
+        case id
+        case about
+        case address
+        case email
+        case company
+        case phone
+    }
 }

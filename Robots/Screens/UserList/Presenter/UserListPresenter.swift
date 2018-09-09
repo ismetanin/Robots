@@ -24,7 +24,7 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
                     id: 0,
                     firstname: "John",
                     lastname: "Smith",
-                    photoURL: "https://www.photos-de-chat.fr/wp-content/uploads/2015/01/imag-de-chat.jpg",
+                    photoStringURL: "https://www.photos-de-chat.fr/wp-content/uploads/2015/01/imag-de-chat.jpg",
                     about: "About",
                     phone: "+79537003117",
                     email: "jsmth@gmail.com",
