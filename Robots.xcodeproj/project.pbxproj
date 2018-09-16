@@ -19,6 +19,7 @@
 		8029497E1DC241C4916C4AE7 /* Pods_Robots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21700317240E498071D24B3E /* Pods_Robots.framework */; };
 		83A5283F4283CD29A40146EC /* UserListModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773471D5044907B2967547D8 /* UserListModuleConfigurator.swift */; };
 		8B17E24A214D176D00005794 /* UsersMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E249214D176D00005794 /* UsersMapperTests.swift */; };
+		8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E24B214E33FF00005794 /* UsersServiceTests.swift */; };
 		8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1B79E213AAFF9007B643D /* UserListViewState.swift */; };
 		8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A0213AB0A0007B643D /* Gemfile */; };
 		8BA1B7A5213AB0AB007B643D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A4213AB0AB007B643D /* Podfile */; };
@@ -84,6 +85,7 @@
 		7E29BA80DF5EC5129AEC5522 /* Pods-Robots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.debug.xcconfig"; sourceTree = "<group>"; };
 		83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B17E249214D176D00005794 /* UsersMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMapperTests.swift; sourceTree = "<group>"; };
+		8B17E24B214E33FF00005794 /* UsersServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceTests.swift; sourceTree = "<group>"; };
 		8BA1B79E213AAFF9007B643D /* UserListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewState.swift; sourceTree = "<group>"; };
 		8BA1B7A0213AB0A0007B643D /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		8BA1B7A2213AB0A6007B643D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
@@ -248,6 +250,7 @@
 		8B17E247214D172B00005794 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				8B17E24D214E340400005794 /* Service */,
 				8B17E248214D173700005794 /* Mapper */,
 			);
 			path = Users;
@@ -259,6 +262,14 @@
 				8B17E249214D176D00005794 /* UsersMapperTests.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		8B17E24D214E340400005794 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8B17E24B214E33FF00005794 /* UsersServiceTests.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		8BA1B7AB213AB0C4007B643D /* Non-iOS Resources */ = {
@@ -899,6 +910,7 @@
 				2713BDA7B96F221B111150A4 /* UserListModuleConfiguratorTests.swift in Sources */,
 				5A89AC379A7DA686AC0F357D /* UserListRouterTests.swift in Sources */,
 				8B17E24A214D176D00005794 /* UsersMapperTests.swift in Sources */,
+				8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */,
 				002909E41B06A4FC6CBB2420 /* UserListPresenterTests.swift in Sources */,
 				D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */,
 			);
