@@ -43,7 +43,7 @@ final class UserListViewTests: XCTestCase {
     func testThatViewAsksForSelectUser() {
         // given
         let user = User(id: 0, firstname: "", lastname: "",
-                        photoURL: "", about: "", phone: "",
+                        photoStringURL: "", about: "", phone: "",
                         email: "", company: "", address: "")
         self.view?.adapter = UserListViewAdapterMock()
         // when
