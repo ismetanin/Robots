@@ -20,6 +20,7 @@ final class UserListModuleConfigurator {
         presenter.view = view
         presenter.router = router
         presenter.output = output
+        presenter.service = UsersServiceFactory().produce()
 
         router.view = view
 

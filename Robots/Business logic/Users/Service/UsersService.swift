@@ -25,7 +25,29 @@ final class UsersService: UsersAbstractService {
     // MARK: - UsersAbstractService
 
     func getAll(onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void) {
-        
+        guard let request = try? UsersServiceRequests.getAll.asURLRequest() else {
+            fatalError()
+        }
+
+        transport.perform(request: request, onCompleted: { [weak self] _, data in
+            guard let `self` = self else {
+                return
+            }
+            do {
+                let users = try self.mapper.mapAll(data: data)
+                DispatchQueue.main.async {
+                    onCompleted(users)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    onError(error)
+                }
+            }
+        }, onError: { error in
+            DispatchQueue.main.async {
+                onError(error)
+            }
+        })
     }
 
 }

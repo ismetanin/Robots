@@ -13,26 +13,17 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
     weak var view: UserListViewInput?
     var router: UserListRouterInput?
     var output: UserListModuleOutput?
+    var service: UsersAbstractService?
 
     // MARK: - UserListViewOutput
 
     func loadData() {
         view?.configure(with: .loading)
-        view?.configure(with: UserListViewState.data(
-            users: [
-                User(
-                    id: 0,
-                    firstname: "John",
-                    lastname: "Smith",
-                    photoStringURL: "https://www.photos-de-chat.fr/wp-content/uploads/2015/01/imag-de-chat.jpg",
-                    about: "About",
-                    phone: "+79537003117",
-                    email: "jsmth@gmail.com",
-                    company: "",
-                    address: ""
-                )
-            ])
-        )
+        service?.getAll(onCompleted: { [weak self] users in
+            self?.view?.configure(with: .data(users: users))
+        }, onError: { [weak self] error in
+            self?.view?.configure(with: .error(error: error))
+        })
     }
 
     func select(user: User) {

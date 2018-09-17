@@ -502,7 +502,6 @@
 				8BB36CBA2129FE5000DBE8CE /* Tests */,
 				8BB36CBD2129FE5000DBE8CE /* Info.plist */,
 				8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */,
-				8B17E246214D172100005794 /* Business logic */,
 			);
 			path = RobotsTests;
 			sourceTree = "<group>";
@@ -510,6 +509,7 @@
 		8BB36CBA2129FE5000DBE8CE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8B17E246214D172100005794 /* Business logic */,
 				64E6F13BD17C11112C382FDC /* Screens */,
 			);
 			path = Tests;
