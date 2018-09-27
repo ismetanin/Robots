@@ -8,18 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		002909E41B06A4FC6CBB2420 /* UserListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBF1D4F9AFD3D8641A4033 /* UserListPresenterTests.swift */; };
+		1705F5AE1C7802D0D465ECBF /* UserDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F4F502D4A82E107C0BA5A /* UserDetailViewInput.swift */; };
 		1B7E4F24C54E87BA9FFB84BD /* UserListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5240908151F2899798BC27D /* UserListViewOutput.swift */; };
+		1FDD522210C312F677A6F65D /* UserDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62766101E2F8ADB5CCEAD8E /* UserDetailViewOutput.swift */; };
 		2713BDA7B96F221B111150A4 /* UserListModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F8231AA2734B47650B920 /* UserListModuleConfiguratorTests.swift */; };
+		273A2B8A5EBB580EBBDD6D8B /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A6C27FEB0A0B44997C16B /* UserDetailRouter.swift */; };
 		2B5DABCA5C86A7124F714B3B /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC95C96F5238D5DE8E81D9 /* UserListViewController.swift */; };
+		34AB36256B22B76B53814797 /* UserDetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6790708A2FD7DED300B32DD1 /* UserDetailModuleInput.swift */; };
+		35C91D7426D8EF72FC671E34 /* UserDetailModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDC0140FE1D31E81887B22B /* UserDetailModuleOutput.swift */; };
 		45E6F3FA33ADEC84C1240FDD /* UserListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BD1976C428DAFE97E5AAC /* UserListModuleOutput.swift */; };
 		567F89D1A261179E4E6A09D2 /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409652EA9B229197F01FC5BB /* UserListRouter.swift */; };
+		59995E9B49194790FA826925 /* UserDetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9095A5752379F8233954E /* UserDetailRouterTests.swift */; };
 		5A89AC379A7DA686AC0F357D /* UserListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333855B919DD5F1FF352830C /* UserListRouterTests.swift */; };
+		616C11C3825ACAF6DCDDCA69 /* UserDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAC92921A0457A0284AA6E /* UserDetailRouterInput.swift */; };
 		6F60BB66238293599FD80F9E /* UserListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E59355A7AF7CF6775441B3E /* UserListModuleInput.swift */; };
 		782CA547F35A165DA895D9E4 /* UserListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4E2E1C7016EAA5EC8E713 /* UserListViewInput.swift */; };
+		7F150FC7B0F053BBC774ABE2 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D96C5414F00A7EB03D64528 /* UserDetailPresenter.swift */; };
 		8029497E1DC241C4916C4AE7 /* Pods_Robots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21700317240E498071D24B3E /* Pods_Robots.framework */; };
 		83A5283F4283CD29A40146EC /* UserListModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773471D5044907B2967547D8 /* UserListModuleConfigurator.swift */; };
 		8B17E24A214D176D00005794 /* UsersMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E249214D176D00005794 /* UsersMapperTests.swift */; };
 		8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E24B214E33FF00005794 /* UsersServiceTests.swift */; };
+		8B462060A36642007E02894C /* UserDetailModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */; };
 		8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1B79E213AAFF9007B643D /* UserListViewState.swift */; };
 		8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A0213AB0A0007B643D /* Gemfile */; };
 		8BA1B7A5213AB0AB007B643D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A4213AB0AB007B643D /* Podfile */; };
@@ -55,10 +64,15 @@
 		8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */; };
 		8BF44B9C213DB40800CFF88B /* CollectionDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */; };
 		8BF44B9E213DB42800CFF88B /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */; };
+		A5D1370D1087EC3AB5C65C02 /* UserDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE17BB78392C080E382B10 /* UserDetailPresenterTests.swift */; };
 		A7BA4A2118F3895E1E951090 /* UserListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDE770E23C905D4E2B07A5 /* UserListRouterInput.swift */; };
+		C278D71FACB25F50025E7C8C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73328539F4892D5B1F41150 /* UserDetailViewController.swift */; };
+		CB189F19802CB74CF73F36D6 /* UserDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */; };
 		D206D7EDB560F4A24F1BF6FC /* Pods_Robots_RobotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */; };
 		D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8360594B3E57625BEB9F9 /* UserListViewTests.swift */; };
+		D833CA3FBC7B596F13F4D270 /* UserDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A48AE6799A11403670AF0 /* UserDetailViewTests.swift */; };
 		E96D4CDC3355DD2BA401B6DB /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC6B7E173A3F401BD35041 /* UserListPresenter.swift */; };
+		EB74FFAE80A632E8073847A0 /* UserDetailModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E1516AA7040F43D67963F /* UserDetailModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,17 +86,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EAC92921A0457A0284AA6E /* UserDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailRouterInput.swift; sourceTree = "<group>"; };
+		0D96C5414F00A7EB03D64528 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
 		14AC95C96F5238D5DE8E81D9 /* UserListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		21700317240E498071D24B3E /* Pods_Robots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1A48AE6799A11403670AF0 /* UserDetailViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewTests.swift; sourceTree = "<group>"; };
 		333855B919DD5F1FF352830C /* UserListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListRouterTests.swift; sourceTree = "<group>"; };
 		409652EA9B229197F01FC5BB /* UserListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
 		4E59355A7AF7CF6775441B3E /* UserListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListModuleInput.swift; sourceTree = "<group>"; };
 		62FC6B7E173A3F401BD35041 /* UserListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		6790708A2FD7DED300B32DD1 /* UserDetailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailModuleInput.swift; sourceTree = "<group>"; };
 		6F4BD1976C428DAFE97E5AAC /* UserListModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListModuleOutput.swift; sourceTree = "<group>"; };
+		736E1516AA7040F43D67963F /* UserDetailModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailModuleConfigurator.swift; sourceTree = "<group>"; };
 		76074943D7D8534AA8AD53B5 /* Pods-Robots-RobotsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		773471D5044907B2967547D8 /* UserListModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListModuleConfigurator.swift; sourceTree = "<group>"; };
 		7CE8360594B3E57625BEB9F9 /* UserListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListViewTests.swift; sourceTree = "<group>"; };
 		7E29BA80DF5EC5129AEC5522 /* Pods-Robots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4A6C27FEB0A0B44997C16B /* UserDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
 		83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B17E249214D176D00005794 /* UsersMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMapperTests.swift; sourceTree = "<group>"; };
 		8B17E24B214E33FF00005794 /* UsersServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceTests.swift; sourceTree = "<group>"; };
@@ -134,9 +154,17 @@
 		93FCBAF4F186B3962D4AEE2B /* Pods-Robots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots/Pods-Robots.release.xcconfig"; sourceTree = "<group>"; };
 		A70F8231AA2734B47650B920 /* UserListModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListModuleConfiguratorTests.swift; sourceTree = "<group>"; };
 		A8FBF1D4F9AFD3D8641A4033 /* UserListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListPresenterTests.swift; sourceTree = "<group>"; };
+		B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		B9BE17BB78392C080E382B10 /* UserDetailPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailPresenterTests.swift; sourceTree = "<group>"; };
+		BBD9095A5752379F8233954E /* UserDetailRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailRouterTests.swift; sourceTree = "<group>"; };
 		C0A4E2E1C7016EAA5EC8E713 /* UserListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListViewInput.swift; sourceTree = "<group>"; };
+		C45F4F502D4A82E107C0BA5A /* UserDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewInput.swift; sourceTree = "<group>"; };
+		CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = UserDetailViewController.storyboard; sourceTree = "<group>"; };
+		D62766101E2F8ADB5CCEAD8E /* UserDetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewOutput.swift; sourceTree = "<group>"; };
+		D73328539F4892D5B1F41150 /* UserDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		E5CDE770E23C905D4E2B07A5 /* UserListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListRouterInput.swift; sourceTree = "<group>"; };
 		F5240908151F2899798BC27D /* UserListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListViewOutput.swift; sourceTree = "<group>"; };
+		FCDC0140FE1D31E81887B22B /* UserDetailModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailModuleOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +195,37 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		0BF411DFCC75851E83351DAD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A6C27FEB0A0B44997C16B /* UserDetailRouter.swift */,
+				02EAC92921A0457A0284AA6E /* UserDetailRouterInput.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0DF69FDD9B31632836CD983A /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				200E89B5A78E23E5204844BD /* Configurator */,
+				1655331EFA0B7ED9ABFFC561 /* Router */,
+				416D124AE74CD4F1A9450550 /* Presenter */,
+				E1846999BD22CCC9D2324C9C /* View */,
+			);
+			name = UserDetail;
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		1655331EFA0B7ED9ABFFC561 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BBD9095A5752379F8233954E /* UserDetailRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		1A49A0FA239491D42BDE8013 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,11 +234,38 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		200E89B5A78E23E5204844BD /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		21DEDA6D393BE5FE218C6526 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				736E1516AA7040F43D67963F /* UserDetailModuleConfigurator.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		3FD1268703D4C11F3FDA1D62 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				A8FBF1D4F9AFD3D8641A4033 /* UserListPresenterTests.swift */,
 			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		416D124AE74CD4F1A9450550 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE17BB78392C080E382B10 /* UserDetailPresenterTests.swift */,
+			);
+			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -224,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6BDADF5C5AC726B47CBAA1 /* UserList */,
+				0DF69FDD9B31632836CD983A /* UserDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -360,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				605FFF906D2A8E88518F354D /* UserList */,
+				BD9ECC92040B585D05A8A334 /* UserDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -581,6 +669,18 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		BD9ECC92040B585D05A8A334 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				21DEDA6D393BE5FE218C6526 /* Configurator */,
+				0BF411DFCC75851E83351DAD /* Router */,
+				F4981C2C9530FA796DA53A26 /* Presenter */,
+				FCCC4B05E26A71810575D0B1 /* View */,
+			);
+			name = UserDetail;
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		DB6BDADF5C5AC726B47CBAA1 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +701,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E1846999BD22CCC9D2324C9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A48AE6799A11403670AF0 /* UserDetailViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4981C2C9530FA796DA53A26 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D96C5414F00A7EB03D64528 /* UserDetailPresenter.swift */,
+				6790708A2FD7DED300B32DD1 /* UserDetailModuleInput.swift */,
+				FCDC0140FE1D31E81887B22B /* UserDetailModuleOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		FBC31F4551B51CC8FED553C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +731,18 @@
 				C0A4E2E1C7016EAA5EC8E713 /* UserListViewInput.swift */,
 				F5240908151F2899798BC27D /* UserListViewOutput.swift */,
 			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCCC4B05E26A71810575D0B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D73328539F4892D5B1F41150 /* UserDetailViewController.swift */,
+				CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */,
+				C45F4F502D4A82E107C0BA5A /* UserDetailViewInput.swift */,
+				D62766101E2F8ADB5CCEAD8E /* UserDetailViewOutput.swift */,
+			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -712,6 +844,7 @@
 				8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */,
 				8BB36C9E2129FE5000DBE8CE /* Assets.xcassets in Resources */,
 				8BA1B7AF213AB15A007B643D /* .gitignore in Resources */,
+				CB189F19802CB74CF73F36D6 /* UserDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,7 +937,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $PODS_ROOT/SwiftGen/bin/swiftgen;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen";
 		};
 		9309D7437ABC5230A3A69CE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -899,6 +1032,15 @@
 				8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */,
 				8BB5160A213AD9BE00807DB8 /* Localizable.swift in Sources */,
 				1B7E4F24C54E87BA9FFB84BD /* UserListViewOutput.swift in Sources */,
+				EB74FFAE80A632E8073847A0 /* UserDetailModuleConfigurator.swift in Sources */,
+				273A2B8A5EBB580EBBDD6D8B /* UserDetailRouter.swift in Sources */,
+				616C11C3825ACAF6DCDDCA69 /* UserDetailRouterInput.swift in Sources */,
+				7F150FC7B0F053BBC774ABE2 /* UserDetailPresenter.swift in Sources */,
+				34AB36256B22B76B53814797 /* UserDetailModuleInput.swift in Sources */,
+				35C91D7426D8EF72FC671E34 /* UserDetailModuleOutput.swift in Sources */,
+				C278D71FACB25F50025E7C8C /* UserDetailViewController.swift in Sources */,
+				1705F5AE1C7802D0D465ECBF /* UserDetailViewInput.swift in Sources */,
+				1FDD522210C312F677A6F65D /* UserDetailViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,6 +1055,10 @@
 				8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */,
 				002909E41B06A4FC6CBB2420 /* UserListPresenterTests.swift in Sources */,
 				D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */,
+				8B462060A36642007E02894C /* UserDetailModuleConfiguratorTests.swift in Sources */,
+				59995E9B49194790FA826925 /* UserDetailRouterTests.swift in Sources */,
+				A5D1370D1087EC3AB5C65C02 /* UserDetailPresenterTests.swift in Sources */,
+				D833CA3FBC7B596F13F4D270 /* UserDetailViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,10 +1208,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = Robots/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.Robots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1081,10 +1224,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = Robots/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.Robots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1101,11 +1241,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = RobotsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.RobotsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1123,11 +1259,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = RobotsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.RobotsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
