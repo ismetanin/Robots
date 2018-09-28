@@ -6,7 +6,6 @@
 //  Copyright © 2018 Ivan Smetanin. All rights reserved.
 //
 
-import Foundation
-
 protocol UserListRouterInput {
+    func showUserDetailModule(with user: User)
 }

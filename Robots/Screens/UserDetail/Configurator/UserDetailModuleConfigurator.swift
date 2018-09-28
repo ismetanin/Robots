@@ -12,17 +12,16 @@ final class UserDetailModuleConfigurator {
 
     // MARK: - Internal methods
 
-    func configure(output: UserDetailModuleOutput? = nil) -> UserDetailViewController {
-        guard let view = UIStoryboard(name: String(describing: UserDetailViewController.self),
-                                      bundle: Bundle.main).instantiateInitialViewController() as? UserDetailViewController else {
-            fatalError("Can't load UserDetailViewController from storyboard, check that controller is initial view controller")
-        }
+    func configure(user: User, output: UserDetailModuleOutput? = nil) -> UserDetailViewController {
+        let view = UserDetailViewController()
         let presenter = UserDetailPresenter()
         let router = UserDetailRouter()
 
         presenter.view = view
         presenter.router = router
         presenter.output = output
+        presenter.setup(with: user)
+
         router.view = view
         view.output = presenter
 

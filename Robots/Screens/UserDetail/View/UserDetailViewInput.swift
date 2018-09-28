@@ -7,6 +7,5 @@
 //
 
 protocol UserDetailViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func configure(with state: UserDetailViewState)
 }

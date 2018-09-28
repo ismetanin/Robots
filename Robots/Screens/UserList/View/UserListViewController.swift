@@ -26,10 +26,7 @@ final class UserListViewController: UIViewController, UserListViewInput, ModuleT
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.loadData()
-        adapter?.set(view: tableView)
-        adapter?.didSelectUser = { [weak self] user in
-            self?.output?.select(user: user)
-        }
+        configureAdapter()
         configureSubviews()
     }
 
@@ -60,6 +57,13 @@ final class UserListViewController: UIViewController, UserListViewInput, ModuleT
     }
 
     // MARK: - Private methods
+
+    private func configureAdapter() {
+        adapter?.set(view: tableView)
+        adapter?.didSelectUser = { [weak self] user in
+            self?.output?.select(user: user)
+        }
+    }
 
     private func configureSubviews() {
         title = L10n.Userlist.title

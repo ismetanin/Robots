@@ -27,7 +27,7 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
     }
 
     func select(user: User) {
-
+        router?.showUserDetailModule(with: user)
     }
 
 }

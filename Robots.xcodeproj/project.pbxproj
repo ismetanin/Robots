@@ -29,6 +29,7 @@
 		8B17E24A214D176D00005794 /* UsersMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E249214D176D00005794 /* UsersMapperTests.swift */; };
 		8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E24B214E33FF00005794 /* UsersServiceTests.swift */; };
 		8B462060A36642007E02894C /* UserDetailModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */; };
+		8B5075B5215D7B0500798B9B /* UserDetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5075B4215D7B0500798B9B /* UserDetailViewState.swift */; };
 		8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1B79E213AAFF9007B643D /* UserListViewState.swift */; };
 		8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A0213AB0A0007B643D /* Gemfile */; };
 		8BA1B7A5213AB0AB007B643D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A4213AB0AB007B643D /* Podfile */; };
@@ -67,7 +68,6 @@
 		A5D1370D1087EC3AB5C65C02 /* UserDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE17BB78392C080E382B10 /* UserDetailPresenterTests.swift */; };
 		A7BA4A2118F3895E1E951090 /* UserListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDE770E23C905D4E2B07A5 /* UserListRouterInput.swift */; };
 		C278D71FACB25F50025E7C8C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73328539F4892D5B1F41150 /* UserDetailViewController.swift */; };
-		CB189F19802CB74CF73F36D6 /* UserDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */; };
 		D206D7EDB560F4A24F1BF6FC /* Pods_Robots_RobotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91461112596E7589638BED95 /* Pods_Robots_RobotsTests.framework */; };
 		D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8360594B3E57625BEB9F9 /* UserListViewTests.swift */; };
 		D833CA3FBC7B596F13F4D270 /* UserDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A48AE6799A11403670AF0 /* UserDetailViewTests.swift */; };
@@ -106,6 +106,7 @@
 		83F72450A9AA55FC5040461F /* Pods-Robots-RobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robots-RobotsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B17E249214D176D00005794 /* UsersMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMapperTests.swift; sourceTree = "<group>"; };
 		8B17E24B214E33FF00005794 /* UsersServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceTests.swift; sourceTree = "<group>"; };
+		8B5075B4215D7B0500798B9B /* UserDetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewState.swift; sourceTree = "<group>"; };
 		8BA1B79E213AAFF9007B643D /* UserListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewState.swift; sourceTree = "<group>"; };
 		8BA1B7A0213AB0A0007B643D /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		8BA1B7A2213AB0A6007B643D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
@@ -159,7 +160,6 @@
 		BBD9095A5752379F8233954E /* UserDetailRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailRouterTests.swift; sourceTree = "<group>"; };
 		C0A4E2E1C7016EAA5EC8E713 /* UserListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListViewInput.swift; sourceTree = "<group>"; };
 		C45F4F502D4A82E107C0BA5A /* UserDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewInput.swift; sourceTree = "<group>"; };
-		CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = UserDetailViewController.storyboard; sourceTree = "<group>"; };
 		D62766101E2F8ADB5CCEAD8E /* UserDetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewOutput.swift; sourceTree = "<group>"; };
 		D73328539F4892D5B1F41150 /* UserDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		E5CDE770E23C905D4E2B07A5 /* UserListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserListRouterInput.swift; sourceTree = "<group>"; };
@@ -201,7 +201,6 @@
 				7E4A6C27FEB0A0B44997C16B /* UserDetailRouter.swift */,
 				02EAC92921A0457A0284AA6E /* UserDetailRouterInput.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -213,7 +212,6 @@
 				416D124AE74CD4F1A9450550 /* Presenter */,
 				E1846999BD22CCC9D2324C9C /* View */,
 			);
-			name = UserDetail;
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
@@ -222,7 +220,6 @@
 			children = (
 				BBD9095A5752379F8233954E /* UserDetailRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -239,7 +236,6 @@
 			children = (
 				B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -248,7 +244,6 @@
 			children = (
 				736E1516AA7040F43D67963F /* UserDetailModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -265,7 +260,6 @@
 			children = (
 				B9BE17BB78392C080E382B10 /* UserDetailPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -677,7 +671,6 @@
 				F4981C2C9530FA796DA53A26 /* Presenter */,
 				FCCC4B05E26A71810575D0B1 /* View */,
 			);
-			name = UserDetail;
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
@@ -706,7 +699,6 @@
 			children = (
 				2F1A48AE6799A11403670AF0 /* UserDetailViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -717,7 +709,6 @@
 				6790708A2FD7DED300B32DD1 /* UserDetailModuleInput.swift */,
 				FCDC0140FE1D31E81887B22B /* UserDetailModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -738,11 +729,10 @@
 			isa = PBXGroup;
 			children = (
 				D73328539F4892D5B1F41150 /* UserDetailViewController.swift */,
-				CA840108DFBF6C770809877C /* UserDetailViewController.storyboard */,
+				8B5075B4215D7B0500798B9B /* UserDetailViewState.swift */,
 				C45F4F502D4A82E107C0BA5A /* UserDetailViewInput.swift */,
 				D62766101E2F8ADB5CCEAD8E /* UserDetailViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -844,7 +834,6 @@
 				8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */,
 				8BB36C9E2129FE5000DBE8CE /* Assets.xcassets in Resources */,
 				8BA1B7AF213AB15A007B643D /* .gitignore in Resources */,
-				CB189F19802CB74CF73F36D6 /* UserDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +926,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen";
+			shellScript = $PODS_ROOT/SwiftGen/bin/swiftgen;
 		};
 		9309D7437ABC5230A3A69CE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -999,6 +988,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5075B5215D7B0500798B9B /* UserDetailViewState.swift in Sources */,
 				8BE0904F2145AFDB00E0552C /* UsersService.swift in Sources */,
 				8BE090492145AEC900E0552C /* UsersAbstractService.swift in Sources */,
 				8BB36CA02129FE5000DBE8CE /* AppDelegate.swift in Sources */,
@@ -1208,7 +1198,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = Robots/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.Robots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1224,7 +1217,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = Robots/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.Robots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1241,7 +1237,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = RobotsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.RobotsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1259,7 +1259,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = RobotsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismetanin.RobotsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

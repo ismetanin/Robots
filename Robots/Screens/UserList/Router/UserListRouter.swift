@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ivan Smetanin. All rights reserved.
 //
 
-import UIKit
-
 final class UserListRouter: UserListRouterInput {
 
 	// MARK: - Properties
@@ -15,5 +13,10 @@ final class UserListRouter: UserListRouterInput {
     weak var view: ModuleTransitionable?
 
 	// MARK: - UserListRouterInput
+
+    func showUserDetailModule(with user: User) {
+        let module = UserDetailModuleConfigurator().configure(user: user)
+        view?.push(module: module, animated: true)
+    }
 
 }

@@ -18,12 +18,35 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        output?.viewLoaded()
+        output?.loadData()
+        configureSubviews()
+    }
+
+    override func loadView() {
+        super.loadView()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        layoutSubviews()
     }
 
     // MARK: - UserDetailViewInput
 
-    func setupInitialState() {
+    func configure(with state: UserDetailViewState) {
+        switch state {
+        case .data(let user):
+            self.title = user.firstname
+        }
+    }
+
+    // MARK: - Private methods
+
+    private func configureSubviews() {
+        view.backgroundColor = .white
+    }
+
+    private func layoutSubviews() {
 
     }
 
