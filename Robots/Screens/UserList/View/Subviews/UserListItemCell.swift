@@ -24,7 +24,7 @@ final class UserListItemCell: UITableViewCell {
         static let defaultMargin: CGFloat = 8
         static let imageViewSize: CGSize = CGSize(width: 42, height: 42)
         static let userNameLabelFontSize: CGFloat = 16
-        static let imageViewPlaceholder: UIImage = #imageLiteral(resourceName: "imgAvatarPlaceholder")
+        static let imageViewPlaceholder: UIImage = Asset.imgAvatarPlaceholder.image
     }
 
     // MARK: - Initialization and deinitialization

@@ -5,3 +5,8 @@ strings:
   templateName: structured-swift3
   output: Localizable.swift
 
+xcassets:
+  paths: Images/Assets.xcassets
+  templateName: swift4
+  output: Assets.swift
+
