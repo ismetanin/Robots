@@ -10,6 +10,10 @@ import UIKit
 
 final class UserDetailViewController: UIViewController, UserDetailViewInput, ModuleTransitionable {
 
+    // MARK: - Subviews
+
+    private lazy var imageView = UIImageView()
+
     // MARK: - Properties
 
     var output: UserDetailViewOutput?
@@ -24,6 +28,7 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
 
     override func loadView() {
         super.loadView()
+        view.addSubview(imageView)
     }
 
     override func viewDidLayoutSubviews() {
@@ -37,6 +42,10 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
         switch state {
         case .data(let user):
             self.title = user.firstname
+            self.imageView.loadImage(
+                with: user.photoStringURL,
+                placeholder: Asset.imgAvatarPlaceholder.image
+            )
         }
     }
 
@@ -47,7 +56,12 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
     }
 
     private func layoutSubviews() {
-
+        imageView.pin
+            .top(view.pin.safeArea)
+            .start(view.pin.safeArea)
+            .width(75)
+            .height(75)
+            .margin(16)
     }
 
 }
