@@ -16,7 +16,11 @@ final class UsersServiceTests: XCTestCase {
     func testThatGetAllHandlesTransportError() {
         // given
         let expectedError: NSError = NSError(domain: "mydom", code: 129, userInfo: ["in": "fo"])
-        let service = UsersService(transport: MockTransport(policy: .returnError(error: expectedError)), mapper: UsersMapper())
+        let service = UsersService(
+            transport: MockTransport(policy: .returnError(error: expectedError)),
+            mapper: UsersMapper(),
+            store: MockStore(policy: .returnData(data: nil))
+        )
         // when
         service.getAll(onCompleted: { _ in
             // then
@@ -52,7 +56,8 @@ final class UsersServiceTests: XCTestCase {
         ]
         let service = UsersService(
             transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
-            mapper: MockMapper(policy: .returnData(data: expectedUsers))
+            mapper: MockMapper(policy: .returnData(data: expectedUsers)),
+            store: MockStore(policy: .returnData(data: nil))
         )
         // when
         service.getAll(onCompleted: { users in
@@ -82,7 +87,8 @@ final class UsersServiceTests: XCTestCase {
         // given
         let service = UsersService(
             transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
-            mapper: UsersMapper()
+            mapper: UsersMapper(),
+            store: MockStore(policy: .returnData(data: nil))
         )
         // when
         service.getAll(onCompleted: { _ in
@@ -139,6 +145,43 @@ final class UsersServiceTests: XCTestCase {
             case .returnError(let error):
                 throw error
             }
+        }
+
+    }
+
+    private final class MockStore: UsersAbstractStore {
+
+        enum ResponsePolicy {
+            case returnData(data: [User]?)
+        }
+
+        let policy: ResponsePolicy
+
+        init(policy: ResponsePolicy) {
+            self.policy = policy
+        }
+
+        func getAll() -> [User]? {
+            switch policy {
+            case .returnData(let data):
+                return data
+            }
+        }
+
+        func append(_ model: User) {
+
+        }
+
+        func append(_ models: [User]) {
+
+        }
+
+        func remove(_ model: User) {
+
+        }
+
+        func removeAll() {
+
         }
 
     }

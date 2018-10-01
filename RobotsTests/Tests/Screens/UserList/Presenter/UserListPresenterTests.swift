@@ -127,6 +127,10 @@ final class UserListPresenterTest: XCTestCase {
 
     private final class MockRouter: UserListRouterInput {
 
+        func showUserDetailModule(with user: User) {
+
+        }
+
     }
 
     private final class MockViewController: UserListViewInput {

@@ -32,3 +32,11 @@ struct User: Codable {
         case phone
     }
 }
+
+extension User: Equatable {
+
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+}
