@@ -13,16 +13,21 @@ final class UserDetailModuleConfiguratorTests: XCTestCase {
 
 	// MARK: - Main tests
 
-    func testThatViewControllerLoadsCorrectly() {
-        if UIStoryboard(name: String(describing: UserDetailViewController.self),
-                        bundle: Bundle.main).instantiateInitialViewController() == nil {
-            XCTFail("Can't load UserDetailViewController from storyboard, check that controller is initial view controller")
-        }
-    }
-
     func testThatScreenConfiguresCorrectly() {
+        // given
+        let user = User(
+            id: 1,
+            firstname: "firstname 1",
+            lastname: "lastname 1",
+            photoStringURL: "photo 1",
+            about: "about 1",
+            phone: "phone 1",
+            email: "email 1",
+            company: "company 1",
+            address: "address 1"
+        )
         // when
-        let viewController = UserDetailModuleConfigurator().configure()
+        let viewController = UserDetailModuleConfigurator().configure(user: user)
 
         // then
         XCTAssertNotNil(viewController.output, "UserDetailViewController is nil after configuration")

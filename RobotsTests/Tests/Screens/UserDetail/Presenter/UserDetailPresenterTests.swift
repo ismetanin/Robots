@@ -37,11 +37,8 @@ final class UserDetailPresenterTest: XCTestCase {
 
     // MARK: - Main tests
 
-    func testThatPresenterHandlesViewLoadedEvent() {
-        // when 
-        presenter?.viewLoaded()
-        // then
-        XCTAssertTrue((presenter?.view as? MockViewController)?.setupInitialStateWasCalled == true)
+    func testThatPresenterHandlesLoadDataEvent() {
+
     }
 
     // MARK: - Mocks
@@ -50,11 +47,13 @@ final class UserDetailPresenterTest: XCTestCase {
     }
 
     private final class MockViewController: UserDetailViewInput {
-        var setupInitialStateWasCalled: Bool = false
 
-        func setupInitialState() {
-            setupInitialStateWasCalled = true
+        var configureWasCalled: Bool = false
+
+        func configure(with state: UserDetailViewState) {
+
         }
+
     }
 
     private final class MockModuleOutput: UserDetailModuleOutput {

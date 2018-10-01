@@ -33,20 +33,11 @@ final class UserDetailViewTests: XCTestCase {
 
     // MARK: - Main tests
 
-    func testThatViewNotifiesPresenterOnDidLoad() {
-        // when
-        self.view?.viewDidLoad()
-        // then
-        XCTAssert(self.output?.viewLoadedWasCalled == true)
-    }
-
     // MARK: - Mocks
 
     final class UserDetailViewOutputMock: UserDetailViewOutput {
-        var viewLoadedWasCalled: Bool = false
+        func loadData() {
 
-        func viewLoaded() {
-            viewLoadedWasCalled = true
         }
     }
 

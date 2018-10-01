@@ -20,9 +20,13 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
     func loadData() {
         view?.configure(with: .loading)
         service?.getAll(onCompleted: { [weak self] users in
-            self?.view?.configure(with: .data(users: users))
+            onMain {
+                self?.view?.configure(with: .data(users: users))
+            }
         }, onError: { [weak self] error in
-            self?.view?.configure(with: .error(error: error))
+            onMain {
+                self?.view?.configure(with: .error(error: error))
+            }
         })
     }
 

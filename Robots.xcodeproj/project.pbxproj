@@ -30,6 +30,10 @@
 		8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17E24B214E33FF00005794 /* UsersServiceTests.swift */; };
 		8B462060A36642007E02894C /* UserDetailModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEC97A84A13BDC04302A1B /* UserDetailModuleConfiguratorTests.swift */; };
 		8B5075B5215D7B0500798B9B /* UserDetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5075B4215D7B0500798B9B /* UserDetailViewState.swift */; };
+		8B5C47AD2162988700033ED1 /* ServicePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C47AC2162988700033ED1 /* ServicePolicy.swift */; };
+		8B5C47AF21629A3000033ED1 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C47AE21629A3000033ED1 /* Closures.swift */; };
+		8B5C47B121629BE400033ED1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C47B021629BE400033ED1 /* Global.swift */; };
+		8B5C47B32162A07600033ED1 /* UsersAbstractStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C47B22162A07600033ED1 /* UsersAbstractStore.swift */; };
 		8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1B79E213AAFF9007B643D /* UserListViewState.swift */; };
 		8BA1B7A1213AB0A0007B643D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A0213AB0A0007B643D /* Gemfile */; };
 		8BA1B7A5213AB0AB007B643D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1B7A4213AB0AB007B643D /* Podfile */; };
@@ -108,6 +112,10 @@
 		8B17E249214D176D00005794 /* UsersMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMapperTests.swift; sourceTree = "<group>"; };
 		8B17E24B214E33FF00005794 /* UsersServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceTests.swift; sourceTree = "<group>"; };
 		8B5075B4215D7B0500798B9B /* UserDetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewState.swift; sourceTree = "<group>"; };
+		8B5C47AC2162988700033ED1 /* ServicePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePolicy.swift; sourceTree = "<group>"; };
+		8B5C47AE21629A3000033ED1 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		8B5C47B021629BE400033ED1 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		8B5C47B22162A07600033ED1 /* UsersAbstractStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAbstractStore.swift; sourceTree = "<group>"; };
 		8BA1B79E213AAFF9007B643D /* UserListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewState.swift; sourceTree = "<group>"; };
 		8BA1B7A0213AB0A0007B643D /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		8BA1B7A2213AB0A6007B643D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
@@ -355,6 +363,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		8B5C47B42162A07C00033ED1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8B5C47B22162A07600033ED1 /* UsersAbstractStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		8BA1B7AB213AB0C4007B643D /* Non-iOS Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,8 +494,9 @@
 		8BB36C862129FE5000DBE8CE /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				8BB51609213AD9BE00807DB8 /* Localizable.swift */,
 				8BE92DC1215EC70000A660B6 /* Assets.swift */,
+				8B5C47AE21629A3000033ED1 /* Closures.swift */,
+				8BB51609213AD9BE00807DB8 /* Localizable.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -525,6 +542,7 @@
 				8BB36C982129FE5000DBE8CE /* Protocols */,
 				8BB36C962129FE5000DBE8CE /* Reusable Layer */,
 				8BB36C922129FE5000DBE8CE /* Utils */,
+				8B5C47B021629BE400033ED1 /* Global.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -606,6 +624,7 @@
 				8BE090512145B04000E0552C /* Service */,
 				8BE090562145B09D00E0552C /* Mapper */,
 				8BE090622145B30E00E0552C /* Requests */,
+				8B5C47B42162A07C00033ED1 /* Store */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -636,6 +655,7 @@
 				8BE090582145B22000E0552C /* BaseServerError.swift */,
 				8BE090592145B22000E0552C /* HTTPMethod.swift */,
 				8BE0905A2145B22000E0552C /* URLRequestConvertible.swift */,
+				8B5C47AC2162988700033ED1 /* ServicePolicy.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1001,6 +1021,7 @@
 				567F89D1A261179E4E6A09D2 /* UserListRouter.swift in Sources */,
 				A7BA4A2118F3895E1E951090 /* UserListRouterInput.swift in Sources */,
 				8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */,
+				8B5C47B121629BE400033ED1 /* Global.swift in Sources */,
 				8BE0905F2145B2B500E0552C /* RuntimeError.swift in Sources */,
 				E96D4CDC3355DD2BA401B6DB /* UserListPresenter.swift in Sources */,
 				8BE090552145B09100E0552C /* UsersMapper.swift in Sources */,
@@ -1016,6 +1037,7 @@
 				6F60BB66238293599FD80F9E /* UserListModuleInput.swift in Sources */,
 				45E6F3FA33ADEC84C1240FDD /* UserListModuleOutput.swift in Sources */,
 				8BE0904D2145AF7F00E0552C /* Factory.swift in Sources */,
+				8B5C47AF21629A3000033ED1 /* Closures.swift in Sources */,
 				8BE090642145B58100E0552C /* Transport.swift in Sources */,
 				2B5DABCA5C86A7124F714B3B /* UserListViewController.swift in Sources */,
 				8BA1B7B1213AB921007B643D /* UserListTableViewAdapter.swift in Sources */,
@@ -1027,12 +1049,14 @@
 				1B7E4F24C54E87BA9FFB84BD /* UserListViewOutput.swift in Sources */,
 				8BE92DC2215EC70000A660B6 /* Assets.swift in Sources */,
 				EB74FFAE80A632E8073847A0 /* UserDetailModuleConfigurator.swift in Sources */,
+				8B5C47B32162A07600033ED1 /* UsersAbstractStore.swift in Sources */,
 				273A2B8A5EBB580EBBDD6D8B /* UserDetailRouter.swift in Sources */,
 				616C11C3825ACAF6DCDDCA69 /* UserDetailRouterInput.swift in Sources */,
 				7F150FC7B0F053BBC774ABE2 /* UserDetailPresenter.swift in Sources */,
 				34AB36256B22B76B53814797 /* UserDetailModuleInput.swift in Sources */,
 				35C91D7426D8EF72FC671E34 /* UserDetailModuleOutput.swift in Sources */,
 				C278D71FACB25F50025E7C8C /* UserDetailViewController.swift in Sources */,
+				8B5C47AD2162988700033ED1 /* ServicePolicy.swift in Sources */,
 				1705F5AE1C7802D0D465ECBF /* UserDetailViewInput.swift in Sources */,
 				1FDD522210C312F677A6F65D /* UserDetailViewOutput.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ final class UsersServiceFactory: Factory {
     typealias Output = UsersService
 
     func produce() -> UsersService {
-        return UsersService(transport: URLSessionTransport(), mapper: UsersMapper())
+        return UsersService(transport: URLSessionTransport(), mapper: UsersMapper(), store: UsersInMemoryStore())
     }
 
 }
