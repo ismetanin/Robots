@@ -67,6 +67,8 @@
 		8BE090642145B58100E0552C /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE090632145B58100E0552C /* Transport.swift */; };
 		8BE090662145B59A00E0552C /* URLSessionTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE090652145B59A00E0552C /* URLSessionTransport.swift */; };
 		8BE92DC2215EC70000A660B6 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE92DC1215EC70000A660B6 /* Assets.swift */; };
+		8BEC16162173C83D00C0593D /* UserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC16152173C83D00C0593D /* UserEntry.swift */; };
+		8BEC16182173C86600C0593D /* UsersRealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC16172173C86600C0593D /* UsersRealmStore.swift */; };
 		8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */; };
 		8BF44B9C213DB40800CFF88B /* CollectionDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */; };
 		8BF44B9E213DB42800CFF88B /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */; };
@@ -158,6 +160,8 @@
 		8BE090632145B58100E0552C /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		8BE090652145B59A00E0552C /* URLSessionTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTransport.swift; sourceTree = "<group>"; };
 		8BE92DC1215EC70000A660B6 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		8BEC16152173C83D00C0593D /* UserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntry.swift; sourceTree = "<group>"; };
+		8BEC16172173C86600C0593D /* UsersRealmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRealmStore.swift; sourceTree = "<group>"; };
 		8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewAdapter.swift; sourceTree = "<group>"; };
 		8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayable.swift; sourceTree = "<group>"; };
 		8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5C47B22162A07600033ED1 /* UsersAbstractStore.swift */,
+				8BEC16172173C86600C0593D /* UsersRealmStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				8BB36C8E2129FE5000DBE8CE /* .gitkeep */,
+				8BEC16152173C83D00C0593D /* UserEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -879,11 +885,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -993,11 +1003,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1023,6 +1037,7 @@
 				8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */,
 				8B5C47B121629BE400033ED1 /* Global.swift in Sources */,
 				8BE0905F2145B2B500E0552C /* RuntimeError.swift in Sources */,
+				8BEC16162173C83D00C0593D /* UserEntry.swift in Sources */,
 				E96D4CDC3355DD2BA401B6DB /* UserListPresenter.swift in Sources */,
 				8BE090552145B09100E0552C /* UsersMapper.swift in Sources */,
 				8BE090532145B08600E0552C /* UsersAbstractMapper.swift in Sources */,
@@ -1050,6 +1065,7 @@
 				8BE92DC2215EC70000A660B6 /* Assets.swift in Sources */,
 				EB74FFAE80A632E8073847A0 /* UserDetailModuleConfigurator.swift in Sources */,
 				8B5C47B32162A07600033ED1 /* UsersAbstractStore.swift in Sources */,
+				8BEC16182173C86600C0593D /* UsersRealmStore.swift in Sources */,
 				273A2B8A5EBB580EBBDD6D8B /* UserDetailRouter.swift in Sources */,
 				616C11C3825ACAF6DCDDCA69 /* UserDetailRouterInput.swift in Sources */,
 				7F150FC7B0F053BBC774ABE2 /* UserDetailPresenter.swift in Sources */,

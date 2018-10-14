@@ -19,38 +19,3 @@ protocol UsersAbstractStore {
     func removeAll()
 
 }
-
-final class UsersInMemoryStore: UsersAbstractStore {
-
-    private var users: [User]?
-
-    func getAll() -> [User]? {
-        return users
-    }
-
-    func append(_ model: User) {
-        if users == nil {
-            users = []
-        }
-        users?.append(model)
-    }
-
-    func append(_ models: [User]) {
-        if users == nil {
-            users = []
-        }
-        users?.append(contentsOf: models)
-    }
-
-    func remove(_ model: User) {
-        guard let index = users?.firstIndex(of: model) else {
-            return
-        }
-        users?.remove(at: index)
-    }
-
-    func removeAll() {
-        users?.removeAll()
-    }
-
-}

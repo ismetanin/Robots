@@ -14,6 +14,7 @@ target 'Robots' do
     utils
     pod 'Nuke', '~> 7.3.2'
     pod 'PinLayout', '~> 1.7.0'
+    pod 'RealmSwift', '~> 3.11.0'
 
     target 'RobotsTests' do
         # Put pods used for both test targets here
