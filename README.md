@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ismetanin/Robots.svg?branch=master)](https://travis-ci.org/ismetanin/Robots) [![codecov](https://codecov.io/gh/ismetanin/Robots/branch/master/graph/badge.svg)](https://codecov.io/gh/ismetanin/Robots)
 # Robots
 Little description
 
