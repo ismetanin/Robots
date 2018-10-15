@@ -10,5 +10,5 @@ enum ServicePolicy {
     case networkOnly
     case cacheOnly
     case firstCacheThenRefreshFromServer
-    case firstServerThenRefreshFromCache
+    case firstServerIfFailThenLoadFromCache
 }

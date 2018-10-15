@@ -24,6 +24,10 @@ final class UsersService: UsersAbstractService {
 
     // MARK: - Initialization and deinitialization
 
+    /// Initializes service with provided components.
+    ///
+    /// - Warning:
+    /// **All completions might be called on background thread!**
     init(transport: Transport, mapper: UsersAbstractMapper, store: UsersAbstractStore) {
         self.transport = transport
         self.mapper = mapper
@@ -42,7 +46,7 @@ final class UsersService: UsersAbstractService {
             loadAllUsersFromCache(onCompleted: onCompleted, onError: onError) { [weak self] in
                 self?.loadAllUsersFromService(onCompleted: onCompleted, onError: onError)
             }
-        case .firstServerThenRefreshFromCache:
+        case .firstServerIfFailThenLoadFromCache:
             loadAllUsersFromService(onCompleted: onCompleted, onError: onError) { [weak self] in
                 self?.loadAllUsersFromCache(onCompleted: onCompleted, onError: onError)
             }
@@ -68,6 +72,8 @@ final class UsersService: UsersAbstractService {
 
             do {
                 let users = try self.mapper.mapAll(data: data)
+                self.store.removeAll()
+                self.store.append(users)
                 onCompleted(users)
             } catch {
                 onError(error)

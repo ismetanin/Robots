@@ -48,11 +48,13 @@
 		8BB36CA02129FE5000DBE8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36C9F2129FE5000DBE8CE /* AppDelegate.swift */; };
 		8BB36CAC2129FE5000DBE8CE /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CAB2129FE5000DBE8CE /* ModuleTransitionable.swift */; };
 		8BB36CAE2129FE5000DBE8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB36CAD2129FE5000DBE8CE /* Main.storyboard */; };
-		8BB36CB92129FE5000DBE8CE /* RobotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */; };
 		8BB51603213AD8BF00807DB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BB51605213AD8BF00807DB8 /* Localizable.strings */; };
 		8BB51608213AD95A00807DB8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BB51607213AD95A00807DB8 /* swiftgen.yml */; };
 		8BB5160A213AD9BE00807DB8 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB51609213AD9BE00807DB8 /* Localizable.swift */; };
 		8BB5160C213BFF1D00807DB8 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5160B213BFF1D00807DB8 /* UIImageView.swift */; };
+		8BDE17262175079700CCCD4E /* UserEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE17252175079700CCCD4E /* UserEntryTests.swift */; };
+		8BDE172821750A7300CCCD4E /* UsersRealmStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE172721750A7300CCCD4E /* UsersRealmStoreTests.swift */; };
+		8BDE172B21750B3400CCCD4E /* UserExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE172A21750B3400CCCD4E /* UserExtensions.swift */; };
 		8BE090492145AEC900E0552C /* UsersAbstractService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE090482145AEC900E0552C /* UsersAbstractService.swift */; };
 		8BE0904B2145AF5D00E0552C /* UsersServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0904A2145AF5D00E0552C /* UsersServiceFactory.swift */; };
 		8BE0904D2145AF7F00E0552C /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0904C2145AF7F00E0552C /* Factory.swift */; };
@@ -67,6 +69,8 @@
 		8BE090642145B58100E0552C /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE090632145B58100E0552C /* Transport.swift */; };
 		8BE090662145B59A00E0552C /* URLSessionTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE090652145B59A00E0552C /* URLSessionTransport.swift */; };
 		8BE92DC2215EC70000A660B6 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE92DC1215EC70000A660B6 /* Assets.swift */; };
+		8BEC16162173C83D00C0593D /* UserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC16152173C83D00C0593D /* UserEntry.swift */; };
+		8BEC16182173C86600C0593D /* UsersRealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC16172173C86600C0593D /* UsersRealmStore.swift */; };
 		8BF44B9A213DAE7100CFF88B /* UserListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */; };
 		8BF44B9C213DB40800CFF88B /* CollectionDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */; };
 		8BF44B9E213DB42800CFF88B /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */; };
@@ -129,7 +133,6 @@
 		8BB36C722129FE5000DBE8CE /* Robots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB36C7C2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C892129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8BB36C8E2129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C932129FE5000DBE8CE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8BB36C9B2129FE5000DBE8CE /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8BB36C9D2129FE5000DBE8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,12 +141,14 @@
 		8BB36CAD2129FE5000DBE8CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BB36CAF2129FE5000DBE8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB36CB42129FE5000DBE8CE /* RobotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsTests.swift; sourceTree = "<group>"; };
 		8BB36CBD2129FE5000DBE8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB51604213AD8BF00807DB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8BB51607213AD95A00807DB8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		8BB51609213AD9BE00807DB8 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		8BB5160B213BFF1D00807DB8 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8BDE17252175079700CCCD4E /* UserEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryTests.swift; sourceTree = "<group>"; };
+		8BDE172721750A7300CCCD4E /* UsersRealmStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRealmStoreTests.swift; sourceTree = "<group>"; };
+		8BDE172A21750B3400CCCD4E /* UserExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExtensions.swift; sourceTree = "<group>"; };
 		8BE090482145AEC900E0552C /* UsersAbstractService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAbstractService.swift; sourceTree = "<group>"; };
 		8BE0904A2145AF5D00E0552C /* UsersServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceFactory.swift; sourceTree = "<group>"; };
 		8BE0904C2145AF7F00E0552C /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
@@ -158,6 +163,8 @@
 		8BE090632145B58100E0552C /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		8BE090652145B59A00E0552C /* URLSessionTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTransport.swift; sourceTree = "<group>"; };
 		8BE92DC1215EC70000A660B6 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		8BEC16152173C83D00C0593D /* UserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntry.swift; sourceTree = "<group>"; };
+		8BEC16172173C86600C0593D /* UsersRealmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRealmStore.swift; sourceTree = "<group>"; };
 		8BF44B99213DAE7100CFF88B /* UserListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewAdapter.swift; sourceTree = "<group>"; };
 		8BF44B9B213DB40800CFF88B /* CollectionDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayable.swift; sourceTree = "<group>"; };
 		8BF44B9D213DB42800CFF88B /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
@@ -343,6 +350,7 @@
 			children = (
 				8B17E24D214E340400005794 /* Service */,
 				8B17E248214D173700005794 /* Mapper */,
+				8BDE172921750A7700CCCD4E /* Store */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -367,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5C47B22162A07600033ED1 /* UsersAbstractStore.swift */,
+				8BEC16172173C86600C0593D /* UsersRealmStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -529,7 +538,7 @@
 		8BB36C8D2129FE5000DBE8CE /* Entry */ = {
 			isa = PBXGroup;
 			children = (
-				8BB36C8E2129FE5000DBE8CE /* .gitkeep */,
+				8BEC16152173C83D00C0593D /* UserEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -604,7 +613,7 @@
 			children = (
 				8BB36CBA2129FE5000DBE8CE /* Tests */,
 				8BB36CBD2129FE5000DBE8CE /* Info.plist */,
-				8BB36CB82129FE5000DBE8CE /* RobotsTests.swift */,
+				8BDE172A21750B3400CCCD4E /* UserExtensions.swift */,
 			);
 			path = RobotsTests;
 			sourceTree = "<group>";
@@ -614,8 +623,33 @@
 			children = (
 				8B17E246214D172100005794 /* Business logic */,
 				64E6F13BD17C11112C382FDC /* Screens */,
+				8BDE17232175077C00CCCD4E /* Models */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		8BDE17232175077C00CCCD4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE17242175078200CCCD4E /* Entry */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BDE17242175078200CCCD4E /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE17252175079700CCCD4E /* UserEntryTests.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		8BDE172921750A7700CCCD4E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE172721750A7300CCCD4E /* UsersRealmStoreTests.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		8BE090502145B03400E0552C /* Users */ = {
@@ -773,7 +807,6 @@
 				8BB36C6F2129FE5000DBE8CE /* Resources */,
 				8BB36C702129FE5000DBE8CE /* Swift Lint */,
 				C373077286204272BBB8442A /* [CP] Embed Pods Frameworks */,
-				764263BC06115BDD575B0F9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -793,7 +826,6 @@
 				8BB36CB12129FE5000DBE8CE /* Frameworks */,
 				8BB36CB22129FE5000DBE8CE /* Resources */,
 				0FBE84DFCCACFB1BB1BBE187 /* [CP] Embed Pods Frameworks */,
-				B45D72B7A8A748685C445C16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -879,11 +911,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -906,21 +942,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		764263BC06115BDD575B0F9A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BB36C702129FE5000DBE8CE /* Swift Lint */ = {
@@ -949,7 +970,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $PODS_ROOT/SwiftGen/bin/swiftgen;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen";
 		};
 		9309D7437ABC5230A3A69CE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -969,21 +990,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B45D72B7A8A748685C445C16 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Robots-RobotsTests/Pods-Robots-RobotsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C373077286204272BBB8442A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -993,11 +999,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Robots/Pods-Robots-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1023,6 +1033,7 @@
 				8BA1B79F213AAFF9007B643D /* UserListViewState.swift in Sources */,
 				8B5C47B121629BE400033ED1 /* Global.swift in Sources */,
 				8BE0905F2145B2B500E0552C /* RuntimeError.swift in Sources */,
+				8BEC16162173C83D00C0593D /* UserEntry.swift in Sources */,
 				E96D4CDC3355DD2BA401B6DB /* UserListPresenter.swift in Sources */,
 				8BE090552145B09100E0552C /* UsersMapper.swift in Sources */,
 				8BE090532145B08600E0552C /* UsersAbstractMapper.swift in Sources */,
@@ -1050,6 +1061,7 @@
 				8BE92DC2215EC70000A660B6 /* Assets.swift in Sources */,
 				EB74FFAE80A632E8073847A0 /* UserDetailModuleConfigurator.swift in Sources */,
 				8B5C47B32162A07600033ED1 /* UsersAbstractStore.swift in Sources */,
+				8BEC16182173C86600C0593D /* UsersRealmStore.swift in Sources */,
 				273A2B8A5EBB580EBBDD6D8B /* UserDetailRouter.swift in Sources */,
 				616C11C3825ACAF6DCDDCA69 /* UserDetailRouterInput.swift in Sources */,
 				7F150FC7B0F053BBC774ABE2 /* UserDetailPresenter.swift in Sources */,
@@ -1066,15 +1078,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB36CB92129FE5000DBE8CE /* RobotsTests.swift in Sources */,
+				8BDE172821750A7300CCCD4E /* UsersRealmStoreTests.swift in Sources */,
 				2713BDA7B96F221B111150A4 /* UserListModuleConfiguratorTests.swift in Sources */,
 				5A89AC379A7DA686AC0F357D /* UserListRouterTests.swift in Sources */,
 				8B17E24A214D176D00005794 /* UsersMapperTests.swift in Sources */,
+				8BDE172B21750B3400CCCD4E /* UserExtensions.swift in Sources */,
 				8B17E24C214E33FF00005794 /* UsersServiceTests.swift in Sources */,
 				002909E41B06A4FC6CBB2420 /* UserListPresenterTests.swift in Sources */,
 				D57D4193596E49F7345057A8 /* UserListViewTests.swift in Sources */,
 				8B462060A36642007E02894C /* UserDetailModuleConfiguratorTests.swift in Sources */,
 				59995E9B49194790FA826925 /* UserDetailRouterTests.swift in Sources */,
+				8BDE17262175079700CCCD4E /* UserEntryTests.swift in Sources */,
 				A5D1370D1087EC3AB5C65C02 /* UserDetailPresenterTests.swift in Sources */,
 				D833CA3FBC7B596F13F4D270 /* UserDetailViewTests.swift in Sources */,
 			);
