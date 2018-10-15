@@ -17,7 +17,7 @@ target 'Robots' do
     pod 'RealmSwift', '~> 3.11.0'
 
     target 'RobotsTests' do
-        # Put pods used for both test targets here
+    	pod 'RealmSwift', '~> 3.11.0'
     end
 
 end

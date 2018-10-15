@@ -10,9 +10,13 @@ import RealmSwift
 
 final class UsersRealmStore: UsersAbstractStore {
 
+    // MARK: - Properties
+
     private var realm: Realm? {
         return try? Realm()
     }
+
+    // MARK: - UsersAbstractStore
 
     func getAll() -> [User]? {
         return realm?.objects(UserEntry.self).map { $0.toEntity() }
@@ -20,23 +24,35 @@ final class UsersRealmStore: UsersAbstractStore {
 
     func append(_ model: User) {
         let entry = UserEntry(from: model)
-        realm?.add(entry)
+        let realm = self.realm
+        try? realm?.write {
+            realm?.add(entry)
+        }
     }
 
     func append(_ models: [User]) {
         let entries = models.map { UserEntry(from: $0) }
-        realm?.add(entries)
+        let realm = self.realm
+        try? realm?.write {
+            realm?.add(entries)
+        }
     }
 
     func remove(_ model: User) {
         guard let entry = user(byId: model.id) else {
             return
         }
-        realm?.delete(entry)
+        let realm = self.realm
+        try? realm?.write {
+            realm?.delete(entry)
+        }
     }
 
     func removeAll() {
-        realm?.deleteAll()
+        let realm = self.realm
+        try? realm?.write {
+            realm?.deleteAll()
+        }
     }
 
     // MARK: - Private methods
