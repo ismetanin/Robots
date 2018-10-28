@@ -9,5 +9,5 @@
 import Foundation
 
 protocol UsersAbstractService {
-    func getAll(onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void)
+    func getAll(policy: ServicePolicy, onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void)
 }

@@ -165,7 +165,7 @@ final class UserListPresenterTest: XCTestCase {
         var currentCurrencyCode: String = ""
         var getUsersCallsCount: Int = 0
 
-        func getAll(onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void) {
+        func getAll(policy: ServicePolicy, onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void) {
             getUsersCallsCount += 1
             switch responsePolicy {
             case .returnData(let data):

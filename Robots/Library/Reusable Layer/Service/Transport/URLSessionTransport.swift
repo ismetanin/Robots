@@ -21,6 +21,7 @@ final class URLSessionTransport: Transport {
                 onError(BaseServerError.undefind)
                 return
             }
+
             onCompleted(response, data)
         }).resume()
     }
