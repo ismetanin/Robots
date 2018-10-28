@@ -19,7 +19,7 @@ final class UserListPresenter: UserListViewOutput, UserListModuleInput {
 
     func loadData() {
         view?.configure(with: .loading)
-        service?.getAll(onCompleted: { [weak self] users in
+        service?.getAll(policy: .firstServerIfFailThenLoadFromCache, onCompleted: { [weak self] users in
             onMain {
                 self?.view?.configure(with: .data(users: users))
             }

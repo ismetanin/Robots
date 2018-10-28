@@ -22,7 +22,7 @@ final class UsersServiceTests: XCTestCase {
             store: MockStore(policy: .returnData(data: nil))
         )
         // when
-        service.getAll(onCompleted: { _ in
+        service.getAll(policy: .networkOnly, onCompleted: { _ in
             // then
             XCTFail()
         }, onError: { error in
@@ -33,26 +33,8 @@ final class UsersServiceTests: XCTestCase {
     func testThatGetAllHandlesData() {
         // given
         let expectedUsers = [
-            User(id: 1,
-                 firstname: "firstname 1",
-                 lastname: "lastname 1",
-                 photoStringURL: "photo 1",
-                 about: "about 1",
-                 phone: "phone 1",
-                 email: "email 1",
-                 company: "company 1",
-                 address: "address 1"
-            ),
-            User(id: 2,
-                 firstname: "firstname 2",
-                 lastname: "lastname 2",
-                 photoStringURL: "photo 2",
-                 about: "about 2",
-                 phone: "phone 2",
-                 email: "email 2",
-                 company: "company 2",
-                 address: "address 2"
-            )
+            User.mock(withId: 1),
+            User.mock(withId: 2)
         ]
         let service = UsersService(
             transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
@@ -60,7 +42,7 @@ final class UsersServiceTests: XCTestCase {
             store: MockStore(policy: .returnData(data: nil))
         )
         // when
-        service.getAll(onCompleted: { users in
+        service.getAll(policy: .networkOnly, onCompleted: { users in
             // then
             XCTAssert(expectedUsers.count == users.count)
             for item in users {
@@ -91,12 +73,116 @@ final class UsersServiceTests: XCTestCase {
             store: MockStore(policy: .returnData(data: nil))
         )
         // when
-        service.getAll(onCompleted: { _ in
+        service.getAll(policy: .networkOnly, onCompleted: { _ in
             // then
             XCTFail()
         }, onError: { error in
             XCTAssert(true)
         })
+    }
+
+    func testThatNetworkOnlyPolicyUsesOnlyTransport() {
+        // given
+        let usersToReturn = [
+            User.mock(withId: 1),
+            User.mock(withId: 2)
+        ]
+        let service = UsersService(
+            transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
+            mapper: MockMapper(policy: .returnData(data: usersToReturn)),
+            store: MockStore(policy: .returnData(data: nil))
+        )
+        let expectation = self.expectation(description: "getAll completion")
+        // when
+        service.getAll(policy: .networkOnly, onCompleted: { users in
+            // then
+            expectation.fulfill()
+            XCTAssertTrue(users == usersToReturn)
+        }, onError: { error in
+            XCTFail()
+        })
+        waitForExpectations(timeout: 1)
+    }
+
+    func testThatFirstCacheThenRefreshFromServerPolicyWorksCorrectly() {
+        // given
+        let usersToReturnFromTransport = [
+            User.mock(withId: 1),
+            User.mock(withId: 2)
+        ]
+        let usersToReturnFromStore = [
+            User.mock(withId: 3)
+        ]
+        let service = UsersService(
+            transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
+            mapper: MockMapper(policy: .returnData(data: usersToReturnFromTransport)),
+            store: MockStore(policy: .returnData(data: usersToReturnFromStore))
+        )
+        let expectation = self.expectation(description: "getAll completion")
+        expectation.expectedFulfillmentCount = 2
+        // when
+        var completionsCount = 0
+        service.getAll(policy: .firstCacheThenRefreshFromServer, onCompleted: { users in
+            // then
+            if completionsCount == 0 {
+                XCTAssertTrue(users == usersToReturnFromStore)
+            } else if completionsCount == 1 {
+                XCTAssertTrue(users == usersToReturnFromTransport)
+            } else {
+                XCTFail()
+            }
+            completionsCount += 1
+            expectation.fulfill()
+        }, onError: { error in
+            XCTFail()
+        })
+        waitForExpectations(timeout: 1)
+    }
+
+    func testThatCacheOnlyPolicyUsesOnlyCache() {
+        // given
+        let usersToReturn = [
+            User.mock(withId: 1),
+            User.mock(withId: 2)
+        ]
+        let service = UsersService(
+            transport: MockTransport(policy: .returnData(response: URLResponse(), data: Data())),
+            mapper: MockMapper(policy: .returnData(data: [])),
+            store: MockStore(policy: .returnData(data: usersToReturn))
+        )
+        let expectation = self.expectation(description: "getAll completion")
+        // when
+        service.getAll(policy: .cacheOnly, onCompleted: { users in
+            // then
+            expectation.fulfill()
+            XCTAssertTrue(users == usersToReturn)
+        }, onError: { error in
+            XCTFail()
+        })
+        waitForExpectations(timeout: 1)
+    }
+
+    func testThatFirstServerIfFailThenLoadFromCachePolicyWorksCorrectly() {
+        // given
+        let usersToReturn = [
+            User.mock(withId: 1)
+        ]
+        let service = UsersService(
+            transport: MockTransport(policy: .returnError(error: NSError())),
+            mapper: MockMapper(policy: .returnData(data: [])),
+            store: MockStore(policy: .returnData(data: usersToReturn))
+        )
+        let expectation = self.expectation(description: "getAll completion")
+        expectation.expectedFulfillmentCount = 2
+        // when
+        service.getAll(policy: .firstServerIfFailThenLoadFromCache, onCompleted: { users in
+            // then
+            XCTAssertTrue(users == usersToReturn)
+            expectation.fulfill()
+        }, onError: { error in
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 1)
     }
 
     // MARK: - Mocks

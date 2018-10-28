@@ -10,12 +10,6 @@ import Foundation
 
 final class UsersService: UsersAbstractService {
 
-    // MARK: - Nested types
-
-    private enum Constants {
-        static let getAllReturnPolicy: ServicePolicy = .firstCacheThenRefreshFromServer
-    }
-
     // MARK: - Constants
 
     private let transport: Transport
@@ -36,8 +30,8 @@ final class UsersService: UsersAbstractService {
 
     // MARK: - UsersAbstractService
 
-    func getAll(onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void) {
-        switch Constants.getAllReturnPolicy {
+    func getAll(policy: ServicePolicy, onCompleted: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void) {
+        switch policy {
         case .networkOnly:
             loadAllUsersFromService(onCompleted: onCompleted, onError: onError)
         case .cacheOnly:
@@ -47,9 +41,10 @@ final class UsersService: UsersAbstractService {
                 self?.loadAllUsersFromService(onCompleted: onCompleted, onError: onError)
             }
         case .firstServerIfFailThenLoadFromCache:
-            loadAllUsersFromService(onCompleted: onCompleted, onError: onError) { [weak self] in
+            loadAllUsersFromService(onCompleted: onCompleted, onError: { [weak self] error in
+                onError(error)
                 self?.loadAllUsersFromCache(onCompleted: onCompleted, onError: onError)
-            }
+            })
         }
     }
 
