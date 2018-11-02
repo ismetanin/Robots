@@ -8,6 +8,11 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
 
+  enum Userdetail {
+    /// Info
+    static let title = L10n.tr("Localizable", "UserDetail.title")
+  }
+
   enum Userlist {
     /// User List
     static let title = L10n.tr("Localizable", "UserList.title")

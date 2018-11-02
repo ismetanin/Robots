@@ -15,6 +15,7 @@ final class UserListPresenterTest: XCTestCase {
 
     private var presenter: UserListPresenter?
     private var view: MockViewController?
+    private var router: MockRouter?
     private var output: MockModuleOutput?
 
     // MARK: - XCTestCase
@@ -22,7 +23,8 @@ final class UserListPresenterTest: XCTestCase {
     override func setUp() {
         super.setUp()
         presenter = UserListPresenter()
-        presenter?.router = MockRouter()
+        router = MockRouter()
+        presenter?.router = router
         view = MockViewController()
         presenter?.view = view
         output = MockModuleOutput()
@@ -123,12 +125,30 @@ final class UserListPresenterTest: XCTestCase {
         }
     }
 
+    func testThatSelectUserCallsRouterForShowUserDetailModule() {
+        // given
+        let user = User.mock(withId: 5)
+        // when
+        presenter?.select(user: user)
+        // then
+        XCTAssert(router?.invokedShowUserDetailModule == true)
+        XCTAssert(router?.invokedShowUserDetailModuleCount == 1)
+        XCTAssert(router?.invokedShowUserDetailModuleCount == 1)
+        XCTAssert(router?.invokedShowUserDetailModuleUser?.id == user.id)
+    }
+
     // MARK: - Mocks
 
     private final class MockRouter: UserListRouterInput {
 
-        func showUserDetailModule(with user: User) {
+        var invokedShowUserDetailModule = false
+        var invokedShowUserDetailModuleCount = 0
+        var invokedShowUserDetailModuleUser: User?
 
+        func showUserDetailModule(with user: User) {
+            invokedShowUserDetailModule = true
+            invokedShowUserDetailModuleCount += 1
+            invokedShowUserDetailModuleUser = user
         }
 
     }

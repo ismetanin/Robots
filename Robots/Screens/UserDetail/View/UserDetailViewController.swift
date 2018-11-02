@@ -10,9 +10,21 @@ import UIKit
 
 final class UserDetailViewController: UIViewController, UserDetailViewInput, ModuleTransitionable {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let imageViewSize: CGSize = CGSize(width: 75, height: 75)
+        static let margin: CGFloat = 16
+        static let userNameLabelFont: UIFont = UIFont.systemFont(
+            ofSize: 16,
+            weight: .medium
+        )
+    }
+
     // MARK: - Subviews
 
     private lazy var imageView = UIImageView()
+    private lazy var userNameLabel = UILabel()
 
     // MARK: - Properties
 
@@ -29,6 +41,7 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
     override func loadView() {
         super.loadView()
         view.addSubview(imageView)
+        view.addSubview(userNameLabel)
     }
 
     override func viewDidLayoutSubviews() {
@@ -41,7 +54,8 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
     func configure(with state: UserDetailViewState) {
         switch state {
         case .data(let user):
-            self.title = user.firstname
+            self.title = L10n.Userdetail.title
+            self.userNameLabel.text = user.firstname + " " + user.lastname
             self.imageView.loadImage(
                 with: user.photoStringURL,
                 placeholder: Asset.imgAvatarPlaceholder.image
@@ -53,15 +67,28 @@ final class UserDetailViewController: UIViewController, UserDetailViewInput, Mod
 
     private func configureSubviews() {
         view.backgroundColor = .white
+
+        userNameLabel.numberOfLines = 1
+        userNameLabel.font = Constants.userNameLabelFont
+        userNameLabel.textColor = .black
     }
 
     private func layoutSubviews() {
         imageView.pin
             .top(view.pin.safeArea)
             .start(view.pin.safeArea)
-            .width(75)
-            .height(75)
-            .margin(16)
+            .width(Constants.imageViewSize.width)
+            .height(Constants.imageViewSize.height)
+            .margin(Constants.margin)
+
+        imageView.layer.cornerRadius = Constants.imageViewSize.width / 2
+
+        userNameLabel.pin
+            .after(of: imageView, aligned: .top)
+            .height(Constants.userNameLabelFont.pointSize)
+            .start(imageView.pin.safeArea)
+            .end(view.pin.safeArea)
+            .margin(Constants.margin)
     }
 
 }
